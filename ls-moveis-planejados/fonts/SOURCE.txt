@@ -1,0 +1,2 @@
+Fonte local reutilizada do acervo deste projeto: kasamoveis/fonts/dm-sans.ttf
+Licença OFL preservada junto aos arquivos.

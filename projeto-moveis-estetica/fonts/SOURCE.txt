@@ -1,0 +1,2 @@
+Fonte local reutilizada do acervo deste projeto: telma-moveis/fonts/urbanist.ttf
+Licença OFL preservada junto aos arquivos.

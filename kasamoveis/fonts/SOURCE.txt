@@ -1,0 +1,3 @@
+https://raw.githubusercontent.com/google/fonts/main/ofl/archivo/Archivo%5Bwdth%2Cwght%5D.ttf
+https://raw.githubusercontent.com/google/fonts/main/ofl/dmsans/DMSans%5Bopsz%2Cwght%5D.ttf
+Fontes Google Fonts, licença SIL OFL. Manrope copiada do pacote licenciado no projeto SJ Design.

@@ -1,0 +1,3 @@
+Manrope variable font, Google Fonts. Source CSS: https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap
+Font URL: https://fonts.gstatic.com/s/manrope/v20/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk59E-_F.ttf
+License: SIL Open Font License.
