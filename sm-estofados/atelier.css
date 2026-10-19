@@ -227,3 +227,11 @@
  .hero :is(.hero-image,.hero-image img,.hero-photo img,.photo-frame img){animation:none!important}
 }
 [data-lightbox] :is(.open-photo,.piece-expand,.expand){display:grid;place-items:center;rotate:0deg!important;transform:none!important;background:#fff!important;color:#26342e!important;font:400 24px/1 Arial,sans-serif!important;box-shadow:0 3px 14px #14212a1a;transition:background .2s,color .2s!important}
+
+/* v8: the visible photo follows the curves, even with contained portrait imagery. */
+main img{border-radius:24px}
+img[data-atelier-photo-rounded="true"]{border-radius:0!important;clip-path:var(--atelier-photo-clip)}
+[data-atelier-photo-window="true"]{border-radius:24px!important}
+.atelier-lightbox-image[data-atelier-image-window="true"]{width:min(100%,calc((100dvh - 230px)*var(--atelier-window-ratio)));height:auto;max-height:none;aspect-ratio:var(--atelier-window-ratio);object-fit:cover;object-position:var(--atelier-window-position)}
+
+[data-atelier-photo-window="true"] img{border-radius:0!important}

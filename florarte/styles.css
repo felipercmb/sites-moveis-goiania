@@ -157,3 +157,6 @@ footer,.footer{padding-bottom:max(28px,env(safe-area-inset-bottom))}
  .project h3{font-size:18px}
  .project-detail{font-size:14px}
 }
+
+/* v8: the complete photo stays still on hover and keyboard focus. */
+.photo img,.project a:hover .photo img,.project a:focus-visible .photo img{transform:none;scale:1}

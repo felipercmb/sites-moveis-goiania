@@ -107,3 +107,11 @@ input,select,textarea{font-size:16px;min-width:0;caret-color:var(--accent)}
  .hero-footnote{gap:10px 18px;flex-wrap:wrap;padding-top:28px}
  .gallery .work:first-child .work-photo{height:clamp(250px,75vw,350px)}
 }
+
+/* v8: remove only the source's embedded black bands; the original remains in the lightbox. */
+.source-no-bands .work-photo{--source-tile-height:410px;display:grid;place-items:center;height:var(--source-tile-height);padding:13px;border-radius:36px 28px 36px 28px}
+.source-crop-window{position:relative;display:block;flex:none;width:min(100%,calc((var(--source-tile-height) - 26px)*.6274509804));aspect-ratio:640/1020;overflow:hidden}
+.source-no-bands .source-crop-window img{position:absolute;left:0;top:-5.6862745098%;width:100%;max-width:none;height:auto;padding:0;object-fit:initial;transform:none;scale:1}
+@media(max-width:1050px){.source-no-bands .work-photo{--source-tile-height:430px}}
+@media(max-width:760px){.source-no-bands .work-photo{--source-tile-height:320px}}
+@media(max-width:500px){.source-no-bands .work-photo{--source-tile-height:455px}}

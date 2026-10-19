@@ -47,3 +47,86 @@
     else motion.addListener(revealAll);
   }
 })();
+
+/* Round the painted photograph itself, including object-fit:contain letterboxing. */
+(() => {
+  'use strict';
+  const start = () => {
+    const observed = new WeakSet();
+    const images = new Set();
+    const windows = '.source-photo-window,.source-crop-window,.photo-letterbox-window';
+    const number = value => Number.parseFloat(value) || 0;
+    const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
+    const position = (token, space, axis) => {
+      if (!token || token === 'center') return space / 2;
+      if (token === 'left' || token === 'top') return 0;
+      if (token === 'right' || token === 'bottom') return space;
+      if (token.endsWith('%')) return space * clamp(number(token) / 100, 0, 1);
+      if (token.endsWith('px')) return clamp(number(token), 0, space);
+      return space / 2;
+    };
+    const roundPhoto = image => {
+      const sourceWindow = image.closest(windows);
+      if (sourceWindow) {
+        sourceWindow.dataset.atelierPhotoWindow = 'true';
+        delete image.dataset.atelierPhotoRounded;
+        image.style.removeProperty('--atelier-photo-clip');
+        return;
+      }
+      if (!image.naturalWidth || !image.naturalHeight || !image.clientWidth || !image.clientHeight) return;
+      const style = getComputedStyle(image);
+      const pl = number(style.paddingLeft), pr = number(style.paddingRight);
+      const pt = number(style.paddingTop), pb = number(style.paddingBottom);
+      const bl = number(style.borderLeftWidth), bt = number(style.borderTopWidth);
+      const width = Math.max(0, image.clientWidth - pl - pr);
+      const height = Math.max(0, image.clientHeight - pt - pb);
+      if (!width || !height) return;
+      let paintedWidth = width, paintedHeight = height;
+      if (style.objectFit === 'contain' || style.objectFit === 'scale-down' || style.objectFit === 'none') {
+        let scale = style.objectFit === 'none' ? 1 : Math.min(width / image.naturalWidth, height / image.naturalHeight);
+        if (style.objectFit === 'scale-down') scale = Math.min(1, scale);
+        paintedWidth = Math.min(width, image.naturalWidth * scale);
+        paintedHeight = Math.min(height, image.naturalHeight * scale);
+      }
+      let tokens = style.objectPosition.trim().split(/\s+/);
+      if (tokens.length === 1) tokens = /top|bottom/.test(tokens[0]) ? ['center', tokens[0]] : [tokens[0], 'center'];
+      const x = bl + pl + position(tokens[0], width - paintedWidth, 'x');
+      const y = bt + pt + position(tokens[1], height - paintedHeight, 'y');
+      const right = Math.max(0, image.offsetWidth - x - paintedWidth);
+      const bottom = Math.max(0, image.offsetHeight - y - paintedHeight);
+      // Echo the nearest curved frame while leaving the furniture's visible edges intact.
+      const cap = Math.min(32, Math.min(paintedWidth, paintedHeight) * .12);
+      const floor = Math.min(12, cap);
+      let owner = image.parentElement, frame;
+      for (let depth = 0; owner && depth < 4; depth++, owner = owner.parentElement) {
+        const candidate = getComputedStyle(owner);
+        if (['borderTopLeftRadius','borderTopRightRadius','borderBottomRightRadius','borderBottomLeftRadius'].some(k => number(candidate[k]) > 4)) { frame = candidate; break; }
+      }
+      const radii = ['borderTopLeftRadius','borderTopRightRadius','borderBottomRightRadius','borderBottomLeftRadius'].map(key => {
+        const value = frame?.[key] || '24px';
+        const radius = value.includes('%') ? paintedWidth * number(value) / 100 : number(value);
+        return clamp(radius || 24, floor, cap).toFixed(2) + 'px';
+      });
+      image.style.setProperty('--atelier-photo-clip', `inset(${Math.max(0,y).toFixed(2)}px ${right.toFixed(2)}px ${bottom.toFixed(2)}px ${Math.max(0,x).toFixed(2)}px round ${radii.join(' ')})`);
+      image.dataset.atelierPhotoRounded = 'true';
+    };
+    const observer = 'ResizeObserver' in window ? new ResizeObserver(entries => entries.forEach(entry => roundPhoto(entry.target))) : null;
+    const watch = image => {
+      if (observed.has(image)) { roundPhoto(image); return; }
+      observed.add(image); images.add(image); observer?.observe(image); roundPhoto(image);
+    };
+    document.querySelectorAll('main img').forEach(watch);
+    // Capturing load also covers images created later by the photo gallery, on every change.
+    document.addEventListener('load', event => {
+      const image = event.target;
+      if (image instanceof HTMLImageElement && image.matches('main img,.atelier-lightbox-image')) watch(image);
+    }, true);
+    let frame = 0;
+    window.addEventListener('resize', () => {
+      if (frame) return;
+      frame = requestAnimationFrame(() => { frame = 0; images.forEach(roundPhoto); });
+    }, { passive: true });
+  };
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start, { once: true });
+  else start();
+})();

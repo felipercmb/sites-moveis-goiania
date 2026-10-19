@@ -106,3 +106,7 @@ input,select,textarea{font-size:16px;min-width:0;caret-color:var(--accent)}
  .hero-frame{height:clamp(310px,96vw,450px);border-radius:110px 30px 50px 30px}
  .hero-location{font-size:12px;max-width:100%}
 }
+
+/* v8: landscape photos retain their full painted width without a tall empty portrait tile. */
+.gallery .work-landscape .work-photo{height:auto;aspect-ratio:auto;padding:13px;border-radius:36px 28px 36px 28px}
+.gallery .work-landscape .work-photo img{display:block;width:100%;height:auto;object-fit:contain;padding:0;transform:none;scale:1}

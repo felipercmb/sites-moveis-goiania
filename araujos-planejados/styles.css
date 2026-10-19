@@ -142,3 +142,19 @@ footer,.footer{padding-bottom:max(28px,env(safe-area-inset-bottom))}
 
 .intro-bottom,.environment-notes p,.details-sticky>p:not(.section-label),.making-copy>p:not(.section-label),.considerations p,.more-heading>p{font-size:16px;line-height:1.7}
 .intro-label{font-size:12px;line-height:1.6}
+
+/* v8: full photographs in the approved olive composition, with no parallax overscan. */
+@media(min-width:721px){
+ .hero-image{inset:50% 24px auto auto;width:52%;height:auto;aspect-ratio:4/3;padding:20px;object-fit:contain;object-position:center;transform:translateY(-50%);scale:1;animation:none;border-radius:64px 28px 64px 28px;background:#334029}
+ .hero-shade{background:none}
+ .hero-content{width:48%;padding-right:0}
+ .hero h1{font-size:clamp(64px,6.2vw,88px)}
+}
+@media(min-width:721px) and (max-width:1050px){
+ .hero-image{right:16px;width:49%;padding:16px;border-radius:50px 24px 50px 24px}
+ .hero-content{width:48%}
+ .hero h1{font-size:clamp(48px,6.2vw,64px)}
+}
+.making-image{display:grid;place-items:center;height:auto;min-height:0;max-height:none;padding:24px;background:#334029;border-radius:0 80px 80px 0}
+.making-image img{display:block;width:100%;height:auto;min-height:0;max-height:680px;margin:0;object-fit:contain;object-position:center;transform:none;translate:none;scale:1}
+@media(max-width:720px){.making-image{height:auto;padding:18px;border-radius:50px 50px 28px 28px}.making-image img{height:auto;min-height:0;max-height:480px;margin:0;object-fit:contain;transform:none;translate:none}}

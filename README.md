@@ -38,3 +38,5 @@ Para prévia local, execute `python3 -m http.server 4173` e abra `http://localho
 ## Refinamento de apresentação
 
 As vinte propostas receberam ajustes de tipografia, proporção das fotografias, navegação e controles de toque. A composição se adapta a celulares, tablets e computadores; os formulários usam campos de 16 px e as galerias preservam a fotografia inteira. As ambientações e os contatos originais foram mantidos.
+
+As fotografias agora recebem o acabamento arredondado no contorno da imagem visível, inclusive quando o enquadramento preserva a proporção original. Foram corrigidos recortes de catálogo e faixas embutidas em algumas publicações; imagens tratadas com IA mantêm identificação e acesso ao registro original.
