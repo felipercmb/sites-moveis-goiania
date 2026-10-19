@@ -57,3 +57,103 @@
 /* v5: reveal the whole photographed detail inside the curved frame. */
 .photo img{object-fit:contain;padding:12px}.v5-staged .photo{aspect-ratio:3/4}.v5-staged .photo img{padding:5px}.hero-image{object-fit:contain;background:var(--stone);padding:12px 12px 50px}.image-disclosure{display:flex;align-items:center;justify-content:space-between;gap:8px 15px;flex-wrap:wrap;font-size:9px;line-height:1.5;color:var(--muted);margin:12px 4px 0}.image-disclosure>a{display:inline-flex;align-items:center;gap:6px;min-height:36px;padding:7px 0;text-decoration:underline;text-underline-offset:3px}.image-disclosure>span{border-radius:999px;padding:5px 10px;background:var(--stone)}
 @media(max-width:700px){.photo img{padding:8px}.v5-staged .photo img{padding:3px}.image-disclosure{font-size:8px;gap:2px;margin-top:8px}.image-disclosure>span{padding:4px 7px}.image-disclosure>a{font-size:9px}}
+
+/* v7 polish: the approved curves with clearer type and comfortable, narrow forms. */
+body{font-size:16px}
+h1,h2,h3{letter-spacing:-.035em;text-wrap:balance}
+::selection{background:var(--request-action,var(--ink,var(--dark)));color:#fff}
+button,input,select,textarea{touch-action:manipulation}
+input,select,textarea{caret-color:var(--request-ink,var(--ink,var(--dark)));font-size:16px}
+.hero h1{font-size:clamp(58px,7vw,96px);letter-spacing:-.035em}
+.menu-toggle,.menu,nav a,.header-contact{min-height:44px}
+nav a{display:inline-flex;align-items:center}
+.filters button,.project-request,.project-source,.project-source-link,.piece-interest,.portfolio-post,.underlink,.line-link,.text-link,.original-image-link{min-height:44px;font-size:12px}
+.project h3,.project-caption h3{line-height:1.35}
+.project figcaption>span,.project-caption>span,.photo-action,.view-photo,.project-source,.project-detail,.project-observation,.portfolio-origin,.publisher-image-note,.image-disclosure,.original-image-link,.section-index,.section-label,.eyebrow,.image-note{font-size:12px;line-height:1.6}
+.image-disclosure{align-items:center;flex-wrap:wrap;gap:6px 14px}
+.project-actions,.piece-actions{gap:4px 16px}
+.project-source,.portfolio-post{display:inline-flex;align-items:center}
+.request-studio,.interest-form,.request-fields,.request-fields label,.contact-info,.enquiry,.enquiry-fields,.enquiry-fields label{min-width:0}
+.request-studio{grid-template-columns:minmax(0,.82fr) minmax(0,1.3fr)}
+.request-intro h3{letter-spacing:-.035em}
+.request-intro>p{font-size:16px;line-height:1.7}
+.request-intro .request-reference{font-size:12px;overflow-wrap:anywhere}
+.request-fields{grid-template-columns:repeat(2,minmax(0,1fr))}
+.request-fields label,.request-fields label .field-label,.request-fields label>span,.request-fields small,.request-copy,.request-primary,.interest-form .request-help,.request-status,.request-preview summary{font-size:12px;line-height:1.6}
+.request-fields input,.request-fields select,.request-fields textarea{font-size:16px;max-width:100%;padding-inline:14px}
+.request-preview summary{min-height:44px;display:flex;align-items:center}
+.request-preview p{overflow-wrap:anywhere;font-size:14px}
+.request-actions{gap:12px 20px}
+.request-primary{min-height:48px;max-width:100%;white-space:normal;overflow-wrap:anywhere;text-align:left}
+.request-copy{min-height:44px}
+.contact-info p{font-size:16px;line-height:1.7;overflow-wrap:anywhere}
+.contact-info h3,.contact-info>div>span{font-size:12px}
+.contact-info a{font-size:14px;min-height:44px;display:flex;align-items:center;max-width:100%;overflow-wrap:anywhere}
+footer>span,footer>p,footer>small,.footer>p,.footer>small{font-size:12px;line-height:1.65}
+footer,.footer{padding-bottom:max(28px,env(safe-area-inset-bottom))}
+@media(max-width:900px){.request-studio{grid-template-columns:minmax(0,1fr);gap:28px}}
+@media(max-width:760px){
+ .hero h1{font-size:clamp(42px,10.7vw,60px);line-height:1.05;letter-spacing:-.035em}
+ .filters{gap:8px}
+ .filters button{min-height:44px;font-size:12px;padding:10px 14px}
+ .project-request,.project-source,.piece-interest,.portfolio-post,.project figcaption>span,.project-caption>span,.photo-action,.view-photo,.project-detail,.project-observation,.image-disclosure,.original-image-link,.section-index,.section-label,.eyebrow,.image-note,.publisher-image-note,.portfolio-origin{font-size:12px}
+ .project figcaption,.project-caption{align-items:start;flex-wrap:wrap;gap:6px 16px}
+ .project figcaption>span,.project-caption>span{max-width:100%;text-align:left}
+ .request-studio{padding:28px 20px;grid-template-columns:minmax(0,1fr);gap:26px}
+ .request-fields{grid-template-columns:minmax(0,1fr);gap:20px}
+ .request-fields input,.request-fields select,.request-fields textarea{font-size:16px;padding-inline:12px}
+ .request-description{grid-column:auto}
+ .request-fields label,.request-fields label .field-label,.request-fields label>span,.request-fields small,.request-copy,.request-primary,.interest-form .request-help,.request-status,.request-preview summary{font-size:12px}
+ .request-primary{padding-inline:17px;gap:14px}
+ .request-actions{align-items:stretch;gap:8px}
+ .request-intro>p{font-size:16px}
+ .request-intro h3{font-size:clamp(28px,8vw,36px)}
+ footer>p,footer>small,.footer>p,.footer>small{font-size:12px;max-width:46ch}
+}
+
+.hero{grid-template-areas:"heading media" "support media" "aside aside";grid-template-rows:auto auto auto;row-gap:0;align-items:stretch}
+.hero-copy{grid-area:heading;align-self:end;padding-top:0}
+.hero-support{grid-area:support;align-self:start;min-width:0;padding-top:27px}
+.hero-image-shell{grid-area:media;align-self:center}
+.hero-aside{grid-area:aside;font-size:12px;padding-top:25px}
+.hero-description{max-width:38ch;font-size:16px;margin:0 0 23px}
+.hero-support .hero-project-link{margin-bottom:10px;font-size:12px}
+.hero-support .text-link{min-width:0;max-width:100%;font-size:12px;min-height:44px;border:0;padding-bottom:0}
+.location{font-size:12px;margin-bottom:22px}
+.hero-image{padding-bottom:70px}
+.image-note{font-size:12px;padding:12px 16px;border-radius:24px;align-items:center;gap:12px}
+.intro-text,.services-title>p:last-child,.service-list details p,.section-heading>p{font-size:16px;line-height:1.7}
+.project-detail{font-size:14px}
+.project h3{font-size:19px}
+.portfolio-bottom{font-size:14px;line-height:1.7}
+.service-list summary{min-height:44px;align-items:center}
+@media(max-width:1000px){.hero h1{font-size:clamp(50px,7.7vw,77px)}}
+@media(max-width:700px){
+ :root{--space:clamp(20px,5.5vw,30px)}
+ .site-header,.site-header.atelier-scrolled{height:80px}
+ nav{top:80px}
+ .menu-toggle{font-size:12px}
+ .hero{padding-top:18px;grid-template-columns:minmax(0,1fr);grid-template-areas:"heading" "media" "support";grid-template-rows:auto;gap:22px}
+ .hero-copy{padding:0}
+ .location{margin-bottom:14px}
+ .hero h1{font-size:clamp(42px,10.7vw,60px);line-height:1.04}
+ .hero-image-shell{height:clamp(350px,110vw,460px);max-width:none;justify-self:stretch;animation:none}
+ .hero-image{padding:12px 12px 72px}
+ .image-note{left:14px;right:14px;bottom:16px;font-size:12px}
+ .image-note span:last-child{display:none}
+ .hero-support{padding:0}
+ .hero-description{font-size:16px;max-width:45ch;margin-bottom:20px}
+ .hero-support .hero-project-link{font-size:12px}
+ .hero-aside{display:none}
+ .intro{margin-top:42px;margin-bottom:64px;padding:40px 24px}
+ .intro h2,.section-heading h2,.services-title h2,.contact h2{font-size:clamp(32px,8.8vw,43px)}
+ .intro-text{font-size:16px;gap:20px}
+ .section-heading>p,.services-title>p:last-child,.service-list details p{font-size:16px}
+ .services-inner{padding-inline:22px}
+ .service-list details,.service-list details:last-child{padding:20px}
+ .service-list summary{font-size:20px;line-height:1.35}
+ .contact{padding-block:64px;gap:32px}
+ .contact-info{padding:26px 22px;gap:28px}
+ .project h3{font-size:18px}
+ .project-detail{font-size:14px}
+}

@@ -34,3 +34,7 @@ São propostas independentes de redesign, sem vínculo oficial com as empresas. 
 GitHub Pages publica a raiz da branch `main`. O arquivo `.nojekyll` preserva as pastas de recursos que começam com sublinhado. Não há build, dependências de servidor ou formulários com envio automático.
 
 Para prévia local, execute `python3 -m http.server 4173` e abra `http://localhost:4173/`.
+
+## Refinamento de apresentação
+
+As vinte propostas receberam ajustes de tipografia, proporção das fotografias, navegação e controles de toque. A composição se adapta a celulares, tablets e computadores; os formulários usam campos de 16 px e as galerias preservam a fotografia inteira. As ambientações e os contatos originais foram mantidos.

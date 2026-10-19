@@ -7,3 +7,41 @@
 .proposal[data-batch="2"] .cover img{object-fit:contain;padding:16px;transform:none}
 .proposal[data-batch="2"] .cover:hover img{transform:none}
 @media(max-width:600px){.proposal[data-batch="2"] .cover img{padding:12px}}
+
+/* v7: readable directory, full furniture views and comfortable touch actions. */
+:root{--muted:#58645b;scrollbar-color:#899781 var(--paper);scrollbar-width:thin}
+.hero{padding-block:58px 54px;gap:64px;grid-template-columns:1.2fr 1fr}
+.hero h1{font-size:clamp(64px,7.5vw,96px);letter-spacing:-.04em;line-height:1.04;margin-left:-3px;text-wrap:balance}
+.hero-copy{max-width:390px}
+.hero-copy>p{font-size:16px;line-height:1.7}
+.hero-meta{font-size:12px;line-height:1.5;margin-top:22px}
+.header-meta{font-size:12px}.header-meta>a{display:flex;align-items:center;min-height:44px}
+.collection-top h2{font-size:25px}.result-count{font-size:13px}
+.toolbar{gap:24px;align-items:center}.filters{gap:6px}
+.filters button{min-height:44px;padding:11px 15px;font-size:13px;line-height:1.35;touch-action:manipulation}
+.search{width:min(310px,35%)}.search input{font-size:14px;min-height:48px;caret-color:var(--green)}.search svg{top:15px}
+.cover>img{object-fit:contain;padding:16px;scale:1;transform:none}.cover:hover>img,.cover:focus-visible>img{scale:1;transform:none}
+.cover-open{width:44px;height:44px}.cover-open svg{width:20px;height:20px}
+.proposal-head{display:grid;grid-template-columns:1fr;gap:6px;padding-top:22px}
+.proposal h3{font-size:clamp(23px,2.2vw,29px);letter-spacing:-.035em;line-height:1.25;text-wrap:balance}
+.segment{font-size:12px;text-align:left;max-width:none;margin:0}
+.reason{font-size:14px;line-height:1.7;max-width:55ch;margin-top:12px}
+.proposal-links{gap:18px;flex-wrap:wrap;margin-top:18px}
+.preview-link{font-size:14px;min-height:46px;padding:12px 18px;gap:16px}
+.instagram-link{font-size:13px;min-height:44px;padding:10px 6px}
+.research summary{font-size:13px;min-height:48px;padding-block:15px}
+.research-body{font-size:14px;line-height:1.75}.research-body dl{grid-template-columns:1fr 1fr;gap:16px}
+.research-body dl>div:last-child{grid-column:1/-1}.research-body dt{font-size:12px}.research-body dd{font-size:20px}
+.research-body dd a{font-size:13px;line-height:1.65}.research-body .research-label{font-size:13px}
+.source-list{gap:6px 16px}.source-list a{font-size:13px;display:inline-flex;align-items:center;min-height:44px}
+.research-body .source-note{font-size:12px;line-height:1.75}
+.method h2{letter-spacing:-.035em;text-wrap:balance}.method-copy{font-size:15px;line-height:1.8}
+.footer{font-size:12px;line-height:1.6}.footer small{font-size:11px}.footer>a{min-height:44px}
+.empty p{font-size:15px}.empty button{font-size:14px;min-height:44px;padding:10px 18px;border:1px solid var(--line);border-radius:24px}
+@media(min-width:1600px){.hero{padding-block:68px}}
+@media(max-width:1100px){.toolbar{flex-wrap:wrap}.search{width:100%;max-width:420px}.filters{flex-wrap:wrap}.hero{gap:34px}.hero h1{font-size:clamp(58px,8vw,86px)}}
+@media(max-width:800px){.hero{gap:24px;padding-block:40px}.hero-copy>p{font-size:15px}.hero h1{font-size:clamp(52px,8.8vw,75px)}.proposals{gap:40px 26px}.proposal-head{display:grid}.proposal-links{gap:14px}.preview-link{font-size:13px}.instagram-link{font-size:13px}.method-copy{font-size:15px}}
+@media(max-width:600px){.hero{grid-template-columns:1fr;padding-block:34px;gap:24px}.hero h1{font-size:clamp(48px,13.5vw,74px);letter-spacing:-.035em;line-height:1.06}.hero-copy{max-width:38ch}.hero-copy>p{font-size:16px;line-height:1.65}.hero-meta{font-size:12px;margin-top:16px}.header-meta>a{font-size:12px}.collection-top{padding:17px 19px}.collection-top h2{font-size:22px}.result-count{font-size:12px}.toolbar{margin-top:17px;margin-bottom:26px}.filters{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;width:100%;margin:0;padding:0;overflow:visible}.filters button{font-size:12px;padding:10px 5px;min-width:0;white-space:normal}.search{width:100%;max-width:none;margin-top:14px}.search input{font-size:16px;min-height:48px}.proposals{row-gap:38px}.cover{aspect-ratio:1.2}.cover>img,.proposal[data-batch="2"] .cover img{padding:14px}.proposal-head{display:grid;padding-top:18px}.proposal h3{font-size:26px}.segment{font-size:12px}.reason{font-size:15px;line-height:1.7}.proposal-links{gap:18px}.preview-link,.instagram-link{font-size:14px;min-height:46px}.research-body dl{grid-template-columns:1fr 1fr}.research-body dl>div:last-child{grid-column:1/-1}.method{padding:30px 24px}.method h2{font-size:31px}.footer{padding:24px;font-size:12px}.footer small{font-size:11px}.collection{padding-bottom:46px}}
+
+/* Show the directory title without waiting behind a clipped entrance. */
+.hero h1 .line>span{animation:none}

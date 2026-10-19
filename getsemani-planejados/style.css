@@ -147,3 +147,113 @@
 .hero-media-note>span{border:1px solid #ffffff70;border-radius:999px;padding:5px 10px}
 .hero-media-note .original-image-link{color:#fff}
 @media(max-width:760px){.hero-photo img{object-position:center top;padding:12px}.hero-photo:after{background:linear-gradient(0deg,#17251f 0%,#17251fb3 28%,#17251f00 75%)}.hero-media-note{font-size:9px;margin-top:12px;gap:13px}}
+
+/* v7 polish: the approved curves with clearer type and comfortable, narrow forms. */
+body{font-size:16px}
+h1,h2,h3{letter-spacing:-.035em;text-wrap:balance}
+::selection{background:var(--request-action,var(--ink,var(--dark)));color:#fff}
+button,input,select,textarea{touch-action:manipulation}
+input,select,textarea{caret-color:var(--request-ink,var(--ink,var(--dark)));font-size:16px}
+.hero h1{font-size:clamp(58px,7vw,96px);letter-spacing:-.035em}
+.menu-toggle,.menu,nav a,.header-contact{min-height:44px}
+nav a{display:inline-flex;align-items:center}
+.filters button,.project-request,.project-source,.project-source-link,.piece-interest,.portfolio-post,.underlink,.line-link,.text-link,.original-image-link{min-height:44px;font-size:12px}
+.project h3,.project-caption h3{line-height:1.35}
+.project figcaption>span,.project-caption>span,.photo-action,.view-photo,.project-source,.project-detail,.project-observation,.portfolio-origin,.publisher-image-note,.image-disclosure,.original-image-link,.section-index,.section-label,.eyebrow,.image-note{font-size:12px;line-height:1.6}
+.image-disclosure{align-items:center;flex-wrap:wrap;gap:6px 14px}
+.project-actions,.piece-actions{gap:4px 16px}
+.project-source,.portfolio-post{display:inline-flex;align-items:center}
+.request-studio,.interest-form,.request-fields,.request-fields label,.contact-info,.enquiry,.enquiry-fields,.enquiry-fields label{min-width:0}
+.request-studio{grid-template-columns:minmax(0,.82fr) minmax(0,1.3fr)}
+.request-intro h3{letter-spacing:-.035em}
+.request-intro>p{font-size:16px;line-height:1.7}
+.request-intro .request-reference{font-size:12px;overflow-wrap:anywhere}
+.request-fields{grid-template-columns:repeat(2,minmax(0,1fr))}
+.request-fields label,.request-fields label .field-label,.request-fields label>span,.request-fields small,.request-copy,.request-primary,.interest-form .request-help,.request-status,.request-preview summary{font-size:12px;line-height:1.6}
+.request-fields input,.request-fields select,.request-fields textarea{font-size:16px;max-width:100%;padding-inline:14px}
+.request-preview summary{min-height:44px;display:flex;align-items:center}
+.request-preview p{overflow-wrap:anywhere;font-size:14px}
+.request-actions{gap:12px 20px}
+.request-primary{min-height:48px;max-width:100%;white-space:normal;overflow-wrap:anywhere;text-align:left}
+.request-copy{min-height:44px}
+.contact-info p{font-size:16px;line-height:1.7;overflow-wrap:anywhere}
+.contact-info h3,.contact-info>div>span{font-size:12px}
+.contact-info a{font-size:14px;min-height:44px;display:flex;align-items:center;max-width:100%;overflow-wrap:anywhere}
+footer>span,footer>p,footer>small,.footer>p,.footer>small{font-size:12px;line-height:1.65}
+footer,.footer{padding-bottom:max(28px,env(safe-area-inset-bottom))}
+@media(max-width:900px){.request-studio{grid-template-columns:minmax(0,1fr);gap:28px}}
+@media(max-width:760px){
+ .hero h1{font-size:clamp(42px,10.7vw,60px);line-height:1.05;letter-spacing:-.035em}
+ .filters{gap:8px}
+ .filters button{min-height:44px;font-size:12px;padding:10px 14px}
+ .project-request,.project-source,.piece-interest,.portfolio-post,.project figcaption>span,.project-caption>span,.photo-action,.view-photo,.project-detail,.project-observation,.image-disclosure,.original-image-link,.section-index,.section-label,.eyebrow,.image-note,.publisher-image-note,.portfolio-origin{font-size:12px}
+ .project figcaption,.project-caption{align-items:start;flex-wrap:wrap;gap:6px 16px}
+ .project figcaption>span,.project-caption>span{max-width:100%;text-align:left}
+ .request-studio{padding:28px 20px;grid-template-columns:minmax(0,1fr);gap:26px}
+ .request-fields{grid-template-columns:minmax(0,1fr);gap:20px}
+ .request-fields input,.request-fields select,.request-fields textarea{font-size:16px;padding-inline:12px}
+ .request-description{grid-column:auto}
+ .request-fields label,.request-fields label .field-label,.request-fields label>span,.request-fields small,.request-copy,.request-primary,.interest-form .request-help,.request-status,.request-preview summary{font-size:12px}
+ .request-primary{padding-inline:17px;gap:14px}
+ .request-actions{align-items:stretch;gap:8px}
+ .request-intro>p{font-size:16px}
+ .request-intro h3{font-size:clamp(28px,8vw,36px)}
+ footer>p,footer>small,.footer>p,.footer>small{font-size:12px;max-width:46ch}
+}
+
+.hero h1{font-size:clamp(62px,6.5vw,96px);letter-spacing:-.035em}
+.hero-content>p,.hero-bottom,.hero-media-note{font-size:12px}
+.hero-media-note{flex-wrap:wrap;gap:8px 18px}
+.hero-media-note .original-image-link{font-size:12px;min-height:44px}
+.intro p,.section-top>p,.portfolio-bottom p,.detail-copy>p:not(.eyebrow),.detail-description>p,.process-list p{font-size:16px;line-height:1.7}
+.detail-description>span,.hotspot-hint,.process-list article>span{font-size:12px}
+.hotspot{width:44px;height:44px;line-height:1}
+.hotspot-hint{line-height:1.5;white-space:normal}
+.enquiry label,.enquiry .enquiry-help,.enquiry-status,.enquiry-preview summary,.enquiry-copy,.enquiry-open{font-size:12px}
+.enquiry select,.enquiry input,.enquiry-preview textarea{font-size:16px;max-width:100%}
+.enquiry-fields{grid-template-columns:repeat(2,minmax(0,1fr))}
+.enquiry-open,.enquiry-copy{max-width:100%;white-space:normal;min-height:48px}
+@media(max-width:760px){
+ :root{--gutter:clamp(20px,5.5vw,30px)}
+ .header{height:80px;gap:16px}
+ .header nav{top:80px;gap:8px}
+ .header nav>a{min-height:44px;display:flex;align-items:center}
+ .menu{font-size:12px;min-height:44px;padding:8px 12px;gap:12px}
+ .brand{font-size:23px;gap:10px}
+ .brand-mark{width:26px;flex-shrink:0;gap:4px}
+ .brand small{font-size:7px;letter-spacing:1px}
+ .hero{display:flex;flex-direction:column;align-items:flex-start;height:auto;min-height:0;max-height:none;padding:26px 20px 30px;background:#27352f;border-radius:26px 26px 70px 26px}
+ .hero-content{display:contents}
+ .hero-content>p{order:0;font-size:12px;margin:0 0 14px}
+ .hero h1{order:1;font-size:clamp(40px,10vw,58px);line-height:1.05;letter-spacing:-.035em;animation:none}
+ .hero-photo{order:2;position:relative;inset:auto;width:100%;height:clamp(310px,94vw,430px);margin-top:22px;border-radius:70px 24px 40px 24px;background:#344239}
+ .hero-photo img{object-fit:contain;object-position:center;padding:10px;animation:none}
+ .hero-photo:after{display:none}
+ .hero-link{order:3;margin:22px 0 0;padding:12px 16px;min-height:48px;font-size:12px;max-width:100%;gap:18px}
+ .hero-media-note{order:4;font-size:12px;margin-top:9px;gap:2px 15px}
+ .hero-media-note .original-image-link{font-size:12px;min-height:44px}
+ .hero-bottom{order:5;position:static;width:100%;font-size:12px;margin-top:20px;gap:15px;flex-wrap:wrap}
+ .hero-bottom span:last-child{max-width:100%;text-align:left}
+ .intro{padding-block:62px;gap:24px}
+ .intro h2,.section-top h2,.detail-copy h2,.contact h2{font-size:clamp(32px,8.8vw,43px);letter-spacing:-.035em}
+ .intro p,.section-top>p,.portfolio-bottom p,.detail-copy>p:not(.eyebrow),.detail-description>p,.process-list p{font-size:16px}
+ .project-caption h3{font-size:17px}
+ .view-photo{font-size:12px;min-height:44px;gap:18px}
+ .project-detail-study .project-caption>span,.project-observation{font-size:14px;line-height:1.7}
+ .detail-description>span,.hotspot-hint{font-size:12px}
+ .hotspot{width:44px;height:44px}
+ .details{padding-inline:20px;gap:24px}
+ .process{padding-block:62px}
+ .process-list{gap:32px}
+ .process-list article{gap:8px 16px}
+ .contact{padding:40px 20px;gap:30px}
+ .contact-info{grid-template-columns:minmax(0,1fr);gap:28px}
+ .enquiry label,.enquiry .enquiry-help,.enquiry-status,.enquiry-preview summary,.enquiry-copy,.enquiry-open{font-size:12px}
+ .enquiry select,.enquiry input,.enquiry-preview textarea{font-size:16px}
+ .enquiry-fields{grid-template-columns:minmax(0,1fr);gap:16px}
+ .enquiry-actions{gap:10px;align-items:stretch}
+ .enquiry-open,.enquiry-copy{font-size:12px;padding-inline:16px;gap:15px;max-width:100%}
+ .footer{align-items:flex-start}
+ .footer>p{font-size:12px;max-width:100%;text-align:left}
+ .footer>small{font-size:12px;text-align:left}
+}

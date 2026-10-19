@@ -204,3 +204,26 @@
 .atelier-lightbox[data-atelier-loading="true"] .atelier-lightbox-image{opacity:.3}
 @media(max-width:600px){.atelier-lightbox-image{max-height:calc(100dvh - 220px)}}
 @media(prefers-reduced-motion:reduce){.atelier-lightbox-navigation button,.atelier-lightbox-image{transition:none}.atelier-lightbox-navigation button:hover{transform:none}}
+
+/* v7: photo controls stay available while long captions scroll. */
+.atelier-lightbox{scrollbar-color:currentColor transparent;scrollbar-width:thin;scroll-padding-top:72px}
+.atelier-lightbox-toolbar{position:sticky;top:-1px;z-index:2;display:grid;grid-template-columns:minmax(0,1fr) 44px;align-items:center;gap:12px;background:inherit;padding:4px 0 10px}
+.atelier-lightbox-toolbar .atelier-lightbox-close{position:static;grid-column:2;grid-row:1;align-self:center}
+.atelier-lightbox-toolbar .atelier-lightbox-navigation{grid-column:1;grid-row:1;padding-right:0;gap:18px}
+.atelier-lightbox button svg{display:block;width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.atelier-lightbox-figure{padding-top:8px;gap:18px}
+.atelier-lightbox-caption{font-size:14px;line-height:1.65;overflow-wrap:anywhere}
+.atelier-lightbox-retry{min-height:44px;margin-top:16px;padding:10px 18px;border:1px solid currentColor;border-radius:24px;background:transparent;color:inherit;font:inherit;cursor:pointer}
+.atelier-lightbox-retry[hidden]{display:none}
+.atelier-lightbox-retry:focus-visible{outline:2px solid currentColor;outline-offset:4px}
+.atelier-lightbox-image{border-radius:8px}
+@media(max-width:600px){.atelier-lightbox{padding:14px;border-radius:min(var(--atelier-lightbox-radius,20px),24px);padding-bottom:calc(18px + env(safe-area-inset-bottom,0px))}.atelier-lightbox-toolbar{gap:8px}.atelier-lightbox-toolbar .atelier-lightbox-navigation{gap:10px}.atelier-lightbox-caption{font-size:13px}.atelier-lightbox-image{max-height:calc(100dvh - 230px)}}
+
+/* v7 inspection fixes: visible first paint and unambiguous photo controls. */
+.hero h1 .line>span{animation:none!important}
+@keyframes atelier-hero-arrive{from{transform:translateY(8px)}to{transform:translateY(0)}}
+@media(prefers-reduced-motion:no-preference){
+ .hero :is(.hero-copy,.hero-heading,.hero-type,.hero-content,.hero-visual,.hero-figure,.hero-picture,.hero-image-shell),.hero .hero-copy>*,.hero .hero-type>*,.hero h1{animation:atelier-hero-arrive .48s cubic-bezier(.2,.7,.2,1) both!important;opacity:1}
+ .hero :is(.hero-image,.hero-image img,.hero-photo img,.photo-frame img){animation:none!important}
+}
+[data-lightbox] :is(.open-photo,.piece-expand,.expand){display:grid;place-items:center;rotate:0deg!important;transform:none!important;background:#fff!important;color:#26342e!important;font:400 24px/1 Arial,sans-serif!important;box-shadow:0 3px 14px #14212a1a;transition:background .2s,color .2s!important}

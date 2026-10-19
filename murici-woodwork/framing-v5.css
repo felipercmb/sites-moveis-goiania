@@ -1,11 +1,74 @@
 /* Show the complete photographs and pieces inside the approved curved frames. */
 .hero-image{background:var(--soft)}
 .hero-image>img{width:100%;height:100%;object-fit:contain;object-position:center;padding:clamp(18px,2.4vw,35px);animation:none;transform:none}
-.hero-image figcaption{left:35px;right:35px;bottom:28px;border-radius:999px;padding:9px 14px;background:rgb(247 248 243 / .94);color:var(--ink);text-shadow:none;font-size:10px}
+.hero-image figcaption{left:35px;right:35px;bottom:28px;border-radius:999px;padding:9px 14px;background:rgb(247 248 243 / .94);color:var(--ink);text-shadow:none;font-size:12px}
 .pieces .piece .photo{padding:clamp(12px,1.6vw,22px);background:var(--soft)}
 .pieces .piece .photo>img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:contain;object-position:center;transform:none;scale:1;border-radius:18px}
 .pieces .piece .photo:is(:hover,:focus-visible)>img{transform:none;scale:1}
 .photo>span{left:25px;right:25px;bottom:24px;color:var(--ink);text-shadow:none;background:rgb(247 248 243 / .94);border-radius:999px;padding:5px 7px 5px 15px}
 .photo b{width:30px;height:30px;background:var(--paper);font-size:23px}
 .craft-grid figure>img{width:100%;height:auto;max-height:640px;object-fit:contain;object-position:center;background:#edf1e7;padding:16px;border-radius:42px}
-@media(max-width:600px){.hero-image>img{padding:18px}.hero-image figcaption{left:25px;right:25px;bottom:24px;font-size:9px;gap:12px}.pieces .piece .photo{padding:16px}.pieces .piece .photo>img{height:auto;aspect-ratio:4/5}.photo>span{left:24px;right:24px;bottom:22px;font-size:10px;padding-left:12px}.craft-grid figure>img{height:auto;max-height:500px;border-radius:34px;padding:14px}}
+@media(max-width:600px){.hero-image>img{padding:18px}.hero-image figcaption{left:25px;right:25px;bottom:24px;font-size:12px;gap:12px}.pieces .piece .photo{padding:16px}.pieces .piece .photo>img{height:auto;aspect-ratio:4/5}.photo>span{left:24px;right:24px;bottom:22px;font-size:12px;padding-left:12px}.craft-grid figure>img{height:auto;max-height:500px;border-radius:34px;padding:14px}}
+
+/* v7: readable text, comfortable touch, and deliberate spacing within this site's existing design. */
+body{font-size:16px;line-height:1.7;padding-left:env(safe-area-inset-left,0px);padding-right:env(safe-area-inset-right,0px)}
+button{min-width:44px;min-height:44px}
+input,select,textarea{min-width:0;max-width:100%;font-size:16px;line-height:1.6;caret-color:var(--ink,currentColor)}
+select,input{min-height:50px}
+textarea{resize:vertical}
+.button,.cta,.piece-inquiry,.piece-query,.copy-inquiry{min-height:48px;font-size:14px;line-height:1.5}
+.menu-toggle{min-width:64px;min-height:44px;font-size:14px}
+.filters,.filter-row,.selection-controls{max-width:100%;flex-wrap:wrap}
+.filters button,.filter-row button,.selection-controls button{min-height:44px;padding:10px 16px;font-size:14px;line-height:1.5}
+.small-link,.text-link,.post-link,.piece-source,.photo-proof>a,.photo-treatment-note>a,.product-visual-note a{display:inline-flex;align-items:center;min-height:44px;font-size:12px;line-height:1.5;white-space:normal}
+.navigation>a,.primary-nav>a,.header nav>a{min-height:44px;display:inline-flex;align-items:center}
+.photo-proof,.photo-treatment-note,.hero-caption,.image-caption,.piece-caption p,.piece-caption>span,.product-info>span,.product-visual-note,.form-note,.request-note,.inquiry-status,.selection-count,.collection-note,.selection-footnote,.hero-note,.hero-photo-label{font-size:12px;line-height:1.65}
+.photo-proof,.photo-treatment-note,.product-visual-note{gap:4px 16px;flex-wrap:wrap;align-items:center}
+.hero h1,.section-heading h2,.section-head h2,.intro-copy h2,.story h2,.contact-intro h2,.visit h2,.craft-heading h2{letter-spacing:-.035em;text-wrap:balance}
+.piece h3,.product-info h3,.piece-caption h3,.piece-description h3{letter-spacing:-.025em;line-height:1.25}
+.hero-description,.hero-text,.intro-copy p,.about-copy p,.section-heading>p,.section-head>p,.possibilities-copy>p,.visit-copy>p,.request-copy>p,.renew-copy>p:not(.small-label),.contact-copy>p:not(.small-label),.contact-description,.craft-copy>p,.hero-bottom>p,.story p,.story-item p,.contact-intro>p,.form-intro,.faq details p{font-size:16px;line-height:1.75}
+.request-form label,.brief-form label,.project-form label,.kasa-inquiry label,.field label,.measure-title{font-size:14px;line-height:1.5}
+.request-form label span,.brief-form label span,.project-form label span,.kasa-inquiry label span,.edit-note{font-size:12px}
+.request-form input,.request-form select,.request-form textarea,.brief-form select,.brief-form textarea,.project-form select,.project-form textarea,.kasa-inquiry select,.kasa-inquiry textarea,.field input,.field select,.field textarea{font-size:16px;line-height:1.6}
+.request-form,.brief-form,.project-form,.kasa-inquiry,.inquiry-form,.contact-copy,.contact-intro{min-width:0}
+.request-form .button,.brief-form .button,.project-form .cta,.inquiry-actions .button{min-height:50px;font-size:14px;line-height:1.5}
+.contact-dock{bottom:calc(20px + env(safe-area-inset-bottom,0px));right:max(20px,env(safe-area-inset-right,0px));max-width:calc(100% - 40px);font-size:13px;min-height:50px}
+footer{padding-bottom:calc(96px + env(safe-area-inset-bottom,0px))}
+footer small,footer>p,footer>a:last-of-type,.footer p,.footer small,.footer-inner p,.footer-inner small,.footer-instagram,.footer-main p,.site-footer small{font-size:12px;line-height:1.7}
+@media(max-width:800px){
+ .contact-dock{position:static;width:max-content;max-width:calc(100% - 36px);margin:12px auto 32px;min-height:50px;padding:10px 18px;justify-content:center;font-size:14px}
+ footer{padding-bottom:calc(32px + env(safe-area-inset-bottom,0px))}
+ .inquiry-actions{display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
+ .inquiry-actions .button,.inquiry-actions>a,.copy-inquiry{width:100%;justify-content:space-between;min-height:50px;font-size:14px}
+ .hero h1{overflow-wrap:normal}
+ .piece-caption,.piece-links,.piece-actions,.hero-caption,.photo-proof,.footer-main{min-width:0}
+}
+@media(max-width:600px){
+ .section-head,.selection-heading,.work-head,.section-heading{gap:20px}
+ .section-head h2,.selection h2,.work-head h2,.section-heading h2{font-size:clamp(32px,9vw,42px);line-height:1.12}
+ .hero-description,.hero-text{max-width:60ch}
+ .measure-fields{grid-template-columns:minmax(0,1fr);gap:12px}
+ .measure-fields .field{margin-top:0}
+ .measure-fields label{font-size:14px}
+ .measure-fields input{font-size:16px;padding:13px 15px}
+ .inquiry-form,.request-form,.brief-form,.project-form,.kasa-inquiry{padding:28px 20px}
+ .filters,.filter-row,.selection-controls{gap:8px;overflow:visible}
+ .filters button,.filter-row button,.selection-controls button{white-space:normal;font-size:13px;padding:10px 14px;min-height:44px}
+ .piece-caption{display:block}
+ .piece-caption p,.piece.v3-piece .piece-caption p{font-size:12px;max-width:48ch;text-align:left;margin-top:8px;line-height:1.7}
+ .piece-caption>span{display:block;margin-top:8px;font-size:12px}
+ .piece-inquiry,.piece-query{max-width:100%;font-size:14px;gap:12px}
+ .photo-proof,.hero-visual>.photo-treatment-note,.hero-content .photo-treatment-note{font-size:12px}
+ .inquiry-form h3,.brief-form h3,.project-form h3,.kasa-inquiry h3{font-size:clamp(25px,7vw,31px);max-width:18ch;line-height:1.2}
+ .footer-inner,.footer-main{gap:20px}
+}
+
+.hero h1{font-size:clamp(68px,8vw,112px);letter-spacing:-.035em}
+.place,.piece-caption p,.material-line,.craft-heading>p,.preview-note,.gallery-note,.footer-brand small{font-size:12px;line-height:1.7}
+.contact-phone,.contact-description,.material-line>p,.craft-copy>p,.section-heading>p{font-size:16px;line-height:1.75}
+.round-link{min-width:48px;min-height:48px}.project-form .cta{font-size:14px}
+@media(max-width:900px){.hero-copy{padding-top:24px}.hero h1{font-size:clamp(56px,8.4vw,76px);margin-block:28px 34px}.hero-bottom>p{font-size:16px}.contact{grid-template-columns:minmax(0,1fr);gap:36px}.project-form{max-width:720px;margin-top:0}.section-heading{gap:32px}}
+@media(max-width:600px){
+ .hero{display:grid;grid-template-columns:minmax(0,1fr);gap:18px;padding:20px 6% 34px;min-height:0}.hero-copy{display:contents}.place{grid-row:1;margin:0;font-size:12px;line-height:1.6}.hero h1{grid-row:2;font-size:clamp(43px,12.2vw,56px);line-height:1.01;margin:0;max-width:9ch;letter-spacing:-.035em}.hero-image{grid-row:3;height:auto;margin:0;border-radius:43% 43% 52px 30px / 20% 22% 52px 30px}.hero-image>img{height:clamp(310px,87vw,390px);padding:18px;object-fit:contain}.hero-image figcaption{position:static;inset:auto;display:flex;flex-wrap:wrap;margin:0 20px 20px;gap:6px 16px;padding:10px 12px;font-size:12px;line-height:1.6}.hero-bottom{grid-row:4;padding:0;margin:0;gap:18px;align-items:center}.hero-bottom>p{font-size:16px;max-width:38ch}.round-link{flex-shrink:0}
+ .material-line{padding:20px;gap:12px}.material-line>p{font-size:16px;width:100%;padding-right:26px}.section-heading>p,.craft-copy>p,.contact-description{font-size:16px;max-width:60ch}.craft-heading h2{font-size:clamp(34px,10vw,44px)}.piece-caption{display:block}.piece-caption h3{font-size:24px}.piece-caption p,.piece.v3-piece .piece-caption p{font-size:12px;text-align:left;max-width:48ch}.filters{width:100%;justify-content:flex-start;border-radius:26px;gap:7px;padding:7px}.filters button{font-size:13px;min-height:44px;padding:10px 14px;flex:1 1 auto}.project-form select,.project-form textarea{font-size:16px}.project-form .cta{font-size:14px}.form-note{font-size:12px}footer{padding-bottom:calc(32px + env(safe-area-inset-bottom,0px))}
+}

@@ -211,6 +211,7 @@
     let dialogImage;
     let dialogCaption;
     let dialogStatus;
+    let dialogRetry;
     let returnFocus;
     let scrollLock;
     let gallery = [];
@@ -239,18 +240,30 @@
       dialog.setAttribute('aria-label', 'Imagem ampliada');
       dialog.setAttribute('aria-describedby', 'atelier-lightbox-caption');
       dialog.tabIndex = -1;
+      const icon = path => {
+        const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+        svg.setAttribute('viewBox', '0 0 24 24');
+        svg.setAttribute('aria-hidden', 'true');
+        svg.setAttribute('focusable', 'false');
+        const line = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+        line.setAttribute('d', path);
+        svg.append(line);
+        return svg;
+      };
+      const toolbar = document.createElement('div');
+      toolbar.className = 'atelier-lightbox-toolbar';
       const close = document.createElement('button');
       close.className = 'atelier-lightbox-close';
       close.type = 'button';
       close.setAttribute('aria-label', 'Fechar imagem ampliada');
-      close.textContent = '×';
+      close.append(icon('M6 6 18 18M18 6 6 18'));
       close.addEventListener('click', closeLightbox);
       const navigation = document.createElement('div');
       navigation.className = 'atelier-lightbox-navigation';
       galleryPrevious = document.createElement('button');
       galleryPrevious.type = 'button';
       galleryPrevious.setAttribute('aria-label', 'Ver foto anterior');
-      galleryPrevious.textContent = '←';
+      galleryPrevious.append(icon('M19 12H5m6-6-6 6 6 6'));
       galleryPrevious.addEventListener('click', () => changeGallery(-1));
       galleryPosition = document.createElement('p');
       galleryPosition.className = 'atelier-lightbox-position';
@@ -258,7 +271,7 @@
       galleryNext = document.createElement('button');
       galleryNext.type = 'button';
       galleryNext.setAttribute('aria-label', 'Ver próxima foto');
-      galleryNext.textContent = '→';
+      galleryNext.append(icon('M5 12h14m-6-6 6 6-6 6'));
       galleryNext.addEventListener('click', () => changeGallery(1));
       navigation.append(galleryPrevious, galleryPosition, galleryNext);
       const figure = document.createElement('figure');
@@ -273,31 +286,55 @@
       dialogStatus = document.createElement('p');
       dialogStatus.className = 'atelier-lightbox-status';
       dialogStatus.setAttribute('role', 'status');
+      dialogRetry = document.createElement('button');
+      dialogRetry.type = 'button';
+      dialogRetry.className = 'atelier-lightbox-retry';
+      dialogRetry.textContent = 'Carregar imagem novamente';
+      dialogRetry.hidden = true;
+      dialogRetry.addEventListener('click', () => {
+        close.focus({ preventScroll: true });
+        dialogRetry.hidden = true;
+        dialog.dataset.atelierLoading = 'true';
+        dialogImage.setAttribute('aria-busy', 'true');
+        dialogStatus.textContent = 'Carregando imagem…';
+        dialogImage.src = dialogImage.src;
+      });
       dialogImage.addEventListener('load', () => {
         dialog.dataset.atelierLoading = 'false';
         dialogStatus.textContent = '';
+        dialogRetry.hidden = true;
+        dialogImage.setAttribute('aria-busy', 'false');
       });
       dialogImage.addEventListener('error', () => {
         dialog.dataset.atelierLoading = 'false';
-        dialogStatus.textContent = 'Não foi possível carregar a imagem.';
+        dialogImage.setAttribute('aria-busy', 'false');
+        dialogRetry.hidden = false;
+        dialogStatus.textContent = 'A imagem não carregou. Confira sua conexão e tente novamente.';
       });
       figure.append(dialogImage, dialogCaption);
-      dialog.append(close, navigation, figure, dialogStatus);
+      toolbar.append(close, navigation);
+      dialog.append(toolbar, figure, dialogStatus, dialogRetry);
       let swipeStart;
       dialogImage.addEventListener('pointerdown', event => {
-        if (event.pointerType === 'touch') swipeStart = { x: event.clientX, y: event.clientY };
+        if (event.pointerType !== 'touch' || !event.isPrimary) return;
+        swipeStart = { x: event.clientX, y: event.clientY, pointerId: event.pointerId };
+        // Keep the finger gesture on the image; vertical page scrolling can still cancel it.
+        try { dialogImage.setPointerCapture(event.pointerId); } catch { /* Pointer already cancelled. */ }
       });
       dialogImage.addEventListener('pointerup', event => {
-        if (!swipeStart) return;
+        if (!swipeStart || event.pointerId !== swipeStart.pointerId) return;
         const dx = event.clientX - swipeStart.x;
         const dy = event.clientY - swipeStart.y;
         swipeStart = null;
         if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.4) changeGallery(dx < 0 ? 1 : -1);
       });
-      dialogImage.addEventListener('pointercancel', () => { swipeStart = null; });
+      const cancelSwipe = event => { if (swipeStart?.pointerId === event.pointerId) swipeStart = null; };
+      dialogImage.addEventListener('pointercancel', cancelSwipe);
+      dialogImage.addEventListener('lostpointercapture', cancelSwipe);
       document.body.append(dialog);
       dialog.addEventListener('cancel', event => { event.preventDefault(); closeLightbox(); });
       dialog.addEventListener('close', () => {
+        swipeStart = null;
         restoreScroll();
         if (returnFocus?.isConnected) returnFocus.focus({ preventScroll: true });
       });
@@ -325,6 +362,8 @@
       const caption = trigger.dataset.caption || thumbnail?.alt || trigger.getAttribute('aria-label') || 'Detalhe do móvel';
       dialogImage.alt = trigger.dataset.alt || thumbnail?.alt || caption;
       dialogCaption.textContent = caption;
+      dialogRetry.hidden = true;
+      dialogImage.setAttribute('aria-busy', 'true');
       dialogStatus.textContent = 'Carregando imagem…';
       dialog.dataset.atelierLoading = 'true';
       dialogImage.src = source;
