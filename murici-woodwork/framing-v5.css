@@ -75,3 +75,12 @@ footer small,footer>p,footer>a:last-of-type,.footer p,.footer small,.footer-inne
 
 /* Keep the course participants and their chairs in the original frame. */
 .people-story>img{display:block;width:100%;height:auto;max-height:540px;padding:clamp(14px,2vw,24px);object-fit:contain;object-position:center;scale:1;translate:none;transform:none;background:var(--paper)}
+
+/* v9: the photograph, rather than an inherited fixed height, defines each frame. */
+.hero-image{height:auto;overflow:visible;background:transparent}
+.hero-photo-frame{--photo-frame-radius:56px 56px 40px 24px;background:var(--soft);border-radius:inherit}
+.hero-image figcaption{position:static;inset:auto;display:flex;flex-wrap:wrap;gap:6px 16px;margin:12px 8px 0;padding:10px 12px}
+.photo{--photo-frame-radius:48px 32px 48px 32px}
+.piece-offset .photo{--photo-frame-radius:56px 56px 32px 32px}
+.craft-photo-frame{--photo-frame-radius:48px 48px 32px 32px;background:#edf1e7;border-radius:42px}
+.people-photo-frame{--photo-frame-radius:26px 56px 26px 56px;background:var(--paper);border-radius:26px 56px 26px 56px}

@@ -235,3 +235,13 @@ img[data-atelier-photo-rounded="true"]{border-radius:0!important;clip-path:var(-
 .atelier-lightbox-image[data-atelier-image-window="true"]{width:min(100%,calc((100dvh - 230px)*var(--atelier-window-ratio)));height:auto;max-height:none;aspect-ratio:var(--atelier-window-ratio);object-fit:cover;object-position:var(--atelier-window-position)}
 
 [data-atelier-photo-window="true"] img{border-radius:0!important}
+
+/* Natural photo proportions keep the furniture whole and its frame close. */
+[data-photo-frame]{--photo-height-limit:600px;--photo-inset:8px;position:relative!important;display:block!important;box-sizing:border-box!important;width:100%!important;max-width:min(100%,calc(var(--photo-height-limit) * var(--photo-ratio)))!important;height:auto!important;min-width:0!important;min-height:0!important;max-height:none!important;aspect-ratio:auto!important;padding:var(--photo-inset)!important;border-radius:var(--photo-frame-radius,40px 40px 32px 32px)!important;margin-inline:auto!important;overflow:visible!important;justify-self:center;align-self:start}
+[data-photo-frame="hero"]{--photo-height-limit:640px;--photo-frame-radius:48px 48px 36px 36px;align-self:center}
+[data-photo-frame="story"]{--photo-height-limit:560px}
+[data-photo-frame] [data-photo-image]{position:static!important;inset:auto!important;display:block!important;box-sizing:border-box!important;width:100%!important;height:auto!important;min-width:0!important;min-height:0!important;max-width:none!important;max-height:none!important;aspect-ratio:var(--photo-ratio)!important;margin:0!important;padding:0!important;object-fit:contain!important;object-position:center!important;transform:none!important;scale:1!important}
+[data-photo-frame]>a:has([data-photo-image],[data-photo-crop]){position:relative!important;inset:auto!important;display:block!important;width:100%!important;height:auto!important;min-width:0!important;min-height:0!important;max-width:none!important;max-height:none!important;aspect-ratio:auto!important;border-radius:inherit!important;margin:0!important;padding:0!important}
+/* These source windows retain the measured photo area, excluding baked-in bars. */
+[data-photo-frame] [data-photo-crop]{position:relative!important;inset:auto!important;display:block!important;width:100%!important;height:auto!important;min-width:0!important;min-height:0!important;max-width:none!important;max-height:none!important;aspect-ratio:var(--photo-ratio)!important;margin:0!important;padding:0!important;transform:none!important;overflow:hidden!important}
+@media(max-width:760px){[data-photo-frame]{--photo-height-limit:500px}[data-photo-frame="hero"]{--photo-height-limit:440px}[data-photo-frame="story"]{--photo-height-limit:480px}}

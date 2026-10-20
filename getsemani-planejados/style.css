@@ -268,3 +268,21 @@ footer,.footer{padding-bottom:max(28px,env(safe-area-inset-bottom))}
 .detail-image-map .hotspot-finish{top:78%;left:42%;right:auto;bottom:auto}
 .detail-image .hotspot-hint{position:static;display:block;width:fit-content;max-width:100%;margin:16px auto 0;padding:0;background:transparent;text-align:center}
 @media(max-width:760px){.detail-image{height:auto;padding:16px;border-radius:50px 50px 28px 28px}}
+
+/* v9: preserve the text/photo desktop composition; the square hotspot map stays independent. */
+@media(min-width:761px){
+ #inicio>.hero-photo[data-photo-frame]{position:absolute!important;inset:50% clamp(52px,5vw,80px) auto auto!important;transform:translateY(-50%);margin:0!important}
+ .hero-content{width:55%;padding-right:0}
+}
+@media(min-width:761px) and (max-width:1050px){
+ #inicio>.hero-photo[data-photo-frame]{width:43%!important;right:64px!important}
+ .hero-content{width:54%;padding-right:0}
+ .hero h1{font-size:clamp(48px,6vw,62px)}
+}
+@media(max-width:760px){
+ #inicio>.hero-photo[data-photo-frame]{order:2;margin-top:22px!important;transform:none}
+}
+
+/* The close photo frame no longer acts as the hero background or text overlay. */
+.hero{background:#27352f}
+.hero-photo:after{display:none}

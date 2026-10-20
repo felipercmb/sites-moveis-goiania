@@ -135,3 +135,16 @@ body{font-size:16px;line-height:1.7}h1,h2,h3{letter-spacing:-.02em;text-wrap:bal
 /* v8: the wood-and-steel detail stays complete inside its decorative frame. */
 .material-photo{background:var(--steel)}
 .material-photo img{position:absolute;inset:18px 18px 64px;width:calc(100% - 36px);height:calc(100% - 82px);min-width:0;min-height:0;object-fit:contain;object-position:center;transform:none;scale:1}
+
+/* v9: keep captions separate while the wood-and-steel photographs fill their frames. */
+.hero-figure{padding:0;overflow:visible;background:transparent}
+.hero-photo-frame{--photo-frame-radius:56px 32px 32px 32px;background:var(--steel);border-radius:inherit}
+.hero-figure figcaption{padding:12px 8px 0}
+.piece-photo{--photo-frame-radius:28px}
+.piece:first-child .piece-photo{--photo-frame-radius:56px 28px 28px 28px}
+.piece:nth-child(2) .piece-photo{--photo-frame-radius:28px 28px 56px 28px}
+.piece:nth-child(3) .piece-photo{--photo-frame-radius:28px 56px 28px 28px}
+.piece:nth-child(5) .piece-photo{--photo-frame-radius:28px 28px 28px 56px}
+.material-photo{display:flex;flex-direction:column;align-self:start;min-height:0;height:auto;overflow:visible;background:transparent}
+.material-image-frame{--photo-frame-radius:0 48px 56px 0;background:var(--steel);border-radius:inherit}
+.material-photo>span{position:static;align-self:start;display:block;margin:14px 18px 18px;font-size:12px;line-height:1.7}

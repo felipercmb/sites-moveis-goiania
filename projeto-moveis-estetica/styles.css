@@ -111,3 +111,8 @@ input,select,textarea{font-size:16px;min-width:0;caret-color:var(--accent)}
  .purpose-links{display:flex;flex-wrap:wrap;gap:0 24px;margin-top:18px}
  .purpose-links a{font-size:12px;min-height:44px}
 }
+
+/* v9: remove the doubled hero surround; its original lilac curve belongs to the photo frame. */
+.hero-visual{width:min(100%,960px);justify-self:center;margin-inline:auto;padding:0;background:transparent}
+.hero-frame{--photo-frame-radius:56px 28px 56px 28px;background:var(--wash);border-radius:inherit}
+.work-photo{--photo-frame-radius:48px 28px 48px 28px}

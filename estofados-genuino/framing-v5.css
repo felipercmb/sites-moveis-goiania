@@ -78,3 +78,9 @@ footer small,footer>p,footer>a:last-of-type,.footer p,.footer small,.footer-inne
  .filters{width:100%;border-radius:26px;justify-content:flex-start;gap:7px;padding:7px}.filters button{flex:1 1 auto;font-size:13px;padding:10px 14px}.renew-copy>p:not(.small-label),.contact-copy>p:not(.small-label){font-size:16px;max-width:60ch}.brief-form select,.brief-form textarea{font-size:16px}.brief-form .button{font-size:14px}.form-note{font-size:12px}footer{padding-bottom:calc(32px + env(safe-area-inset-bottom,0px))}
 }
 @media(max-width:480px){.gallery{grid-template-columns:minmax(0,1fr)}.gallery .work-card,.gallery .work-card.large,.gallery .work-card.second-large{grid-column:auto}.work-card h3{font-size:23px}}
+
+/* Photo-only wrappers leave the hero caption and reform story in normal flow. */
+.photo-frame{height:auto;overflow:visible;background:transparent}
+.photo-frame>.photo-frame-fit{background:var(--stone)}
+.renew-photo{padding:0;overflow:visible}
+.renew-photo>.photo-frame-fit{background:#f4f5ed}

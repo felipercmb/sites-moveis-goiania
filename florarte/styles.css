@@ -160,3 +160,8 @@ footer,.footer{padding-bottom:max(28px,env(safe-area-inset-bottom))}
 
 /* v8: the complete photo stays still on hover and keyboard focus. */
 .photo img,.project a:hover .photo img,.project a:focus-visible .photo img{transform:none;scale:1}
+
+/* v9: keep the image note outside the photograph's natural proportions. */
+.hero-image-shell{height:auto;max-width:none;overflow:visible;background:transparent;box-shadow:none}
+.florarte-hero-frame{background:var(--stone);box-shadow:0 25px 55px rgb(45 60 34 / .07)}
+.hero-image-shell .image-note{position:static;inset:auto;width:fit-content;max-width:100%;margin:12px auto 0;padding:0;background:transparent;backdrop-filter:none}

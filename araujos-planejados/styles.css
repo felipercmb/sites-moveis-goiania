@@ -158,3 +158,17 @@ footer,.footer{padding-bottom:max(28px,env(safe-area-inset-bottom))}
 .making-image{display:grid;place-items:center;height:auto;min-height:0;max-height:none;padding:24px;background:#334029;border-radius:0 80px 80px 0}
 .making-image img{display:block;width:100%;height:auto;min-height:0;max-height:680px;margin:0;object-fit:contain;object-position:center;transform:none;translate:none;scale:1}
 @media(max-width:720px){.making-image{height:auto;padding:18px;border-radius:50px 50px 28px 28px}.making-image img{height:auto;min-height:0;max-height:480px;margin:0;object-fit:contain;transform:none;translate:none}}
+
+/* v9: the hero wrapper carries composition; the photograph itself stays in natural flow. */
+.hero-photo-frame{background:#334029}
+.hero-photo-frame>.hero-image{z-index:auto!important;animation:none!important;background:transparent!important}
+@media(min-width:721px){
+ #inicio>.hero-photo-frame[data-photo-frame]{position:absolute!important;inset:50% 24px auto auto!important;width:52%!important;transform:translateY(-50%);margin:0!important}
+}
+@media(min-width:721px) and (max-width:1050px){
+ #inicio>.hero-photo-frame[data-photo-frame]{right:16px!important;width:49%!important}
+}
+@media(max-width:720px){
+ #inicio>.hero-photo-frame[data-photo-frame]{order:2;margin-top:24px!important;transform:none}
+}
+.making-image[data-photo-frame]{align-self:center;justify-self:center}

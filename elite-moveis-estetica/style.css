@@ -21,3 +21,13 @@ body{font-size:16px;line-height:1.65}h1,h2,h3{letter-spacing:-.035em;text-wrap:b
 @media(max-width:1100px){.piece-2 .piece-media>a{--cropped-photo-max-width:324px}}
 @media(max-width:760px){.piece-2 .piece-media>a{--cropped-photo-max-width:265.5px}}
 @media(max-width:560px){.piece-2 .piece-media>a{--cropped-photo-max-width:297px}}
+
+/* v9: keep the soft asymmetric surrounds close to each photograph, including the measured source window. */
+.hero-photo{--photo-frame-radius:56px 56px 36px 36px}
+.piece-media{--photo-frame-radius:48px 48px 28px 28px}
+.piece-media>a{position:absolute;inset:0;width:100%;height:100%;min-height:0;padding:0}
+.piece-2 .piece-media{--photo-frame-radius:56px 28px 28px 28px}
+.piece-3 .piece-media{--photo-frame-radius:28px 28px 56px 28px}
+.piece-4 .piece-media{--photo-frame-radius:28px 56px 28px 28px}
+.piece-5 .piece-media{--photo-frame-radius:56px 56px 28px 28px}
+.piece-2 .source-photo-window{max-width:none}

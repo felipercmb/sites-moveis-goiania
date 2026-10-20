@@ -32,3 +32,11 @@ body{font-size:16px;line-height:1.65}h1,h2,h3{letter-spacing:-.035em;text-wrap:b
 @media(max-width:1100px){.piece-photo{--piece-photo-inset:18px}}
 @media(max-width:760px){.piece-photo{--piece-photo-inset:12px}}
 @media(max-width:560px){.piece-photo{--piece-photo-inset:18px}}
+
+/* v9: retain asymmetric wood frames around the photograph's own proportions. */
+.hero-image-shell{--photo-frame-radius:56px 48px 36px 28px}
+.piece-photo{--piece-photo-inset:0px;--photo-frame-radius:48px 48px 32px 32px}
+.piece-photo>a{inset:0;padding:0}
+.piece-3 .piece-photo{--photo-frame-radius:28px 56px 28px 28px}
+.piece-4 .piece-photo{--photo-frame-radius:28px 28px 48px 28px}
+.piece-8 .piece-photo{--photo-frame-radius:40px 28px 56px 28px}

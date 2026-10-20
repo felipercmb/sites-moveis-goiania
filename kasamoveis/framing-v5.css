@@ -74,3 +74,8 @@ footer small,footer>p,footer>a:last-of-type,.footer p,.footer small,.footer-inne
  .hero-description{grid-row:4;margin:4px 0 0;max-width:none;font-size:16px;line-height:1.75}.hero-content>.button{grid-row:5;width:max-content;max-width:100%;margin:0;min-height:50px;font-size:14px}.hero-content .photo-treatment-note{grid-row:6;margin:0;font-size:12px}.hero-bottom{grid-row:7;position:static;inset:auto;padding:0;justify-content:flex-start}.hero-detail{font-size:13px;min-height:44px;padding:8px 12px 8px 16px}.hero-bottom>p{display:none}
  .selection-controls{width:100%;border-radius:24px;gap:8px;padding:7px}.selection-controls button{flex:1 1 120px;font-size:13px}.piece-caption h3,.piece-narrow .piece-caption h3{font-size:23px}.selection-footnote{font-size:12px}.selection-footnote p{font-size:12px}.possibilities-copy>p,.intro-copy>p,.visit-copy>p{font-size:16px}.inquiry-status{font-size:12px}.kasa-inquiry>p:first-of-type{font-size:16px}.footer-inner small{font-size:12px}.site-footer{padding-bottom:calc(32px + env(safe-area-inset-bottom,0px))}
 }
+
+/* Keep the positioned hero shell separate from the photograph's natural frame. */
+.hero-image{display:flex;align-items:center;justify-content:center;overflow:visible;background:transparent}
+.hero-image>.photo-frame-fit{background:#edf1ea}
+@media(max-width:600px){.hero-image{height:auto;min-height:0;display:block}}

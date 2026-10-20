@@ -71,3 +71,8 @@ footer small,footer>p,footer>a:last-of-type,.footer p,.footer small,.footer-inne
 
 @media(max-width:800px){.hero-figure{border-radius:100px 100px 35px 35px}.hero-image{border-radius:90px 90px 27px 27px}}
 @media(max-width:600px){.hero h1{font-size:clamp(37px,11.2vw,49px)}.hero-copy>.location-line{padding:7px 12px}.story-item{display:block}.story-item p{margin-top:8px}.story h2{font-size:clamp(34px,10vw,43px)}}
+
+/* Keep the kitchen portrait large while the surrounding shell follows its width. */
+.hero-figure:has(>.photo-frame-fit){max-width:calc(640px * .562200957 + 36px)}
+@media(max-width:800px){.hero-figure:has(>.photo-frame-fit){max-width:calc(440px * .562200957 + 36px)}}
+@media(max-width:600px){.hero-figure:has(>.photo-frame-fit){max-width:calc(440px * .562200957 + 20px)}}

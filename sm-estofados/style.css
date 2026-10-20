@@ -76,3 +76,8 @@ footer small,footer>p,footer>a:last-of-type,.footer p,.footer small,.footer-inne
 article.piece>button.piece-image.piece-image--letterbox{display:block;height:auto;aspect-ratio:auto}
 .piece-image--letterbox .photo-letterbox-window{display:block;position:relative;width:100%;aspect-ratio:720/539;overflow:hidden}
 .piece-image--letterbox .photo-letterbox-window>img{display:block;position:absolute;inset:0 0 auto;width:100%;height:auto;min-height:0;max-width:100%;max-height:none;aspect-ratio:1;object-fit:contain;object-position:center;scale:1;translate:none;transform:translateY(-9.305555556%)}
+
+/* Bound the decorated shell to the landscape photograph; captions keep their own flow. */
+.hero-figure:has(>.photo-frame-fit){max-width:calc(640px * 1.5 + 36px)}
+@media(max-width:800px){.hero-figure:has(>.photo-frame-fit){max-width:calc(440px * 1.5 + 26px)}}
+@media(max-width:600px){.hero-figure:has(>.photo-frame-fit){max-width:calc(440px * 1.5 + 20px)}}
