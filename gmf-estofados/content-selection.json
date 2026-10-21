@@ -1,0 +1,94 @@
+{
+  "slug": "gmf-estofados",
+  "name": "GMF Estofados",
+  "handle": "gmfestofados",
+  "profile": "https://www.instagram.com/gmfestofados/",
+  "captured": "2026-10-21",
+  "city": "Goiânia",
+  "locationNote": "Cidade confirmada no perfil; endereço omitido.",
+  "contact": {
+    "mode": "instagram-copy",
+    "whatsapp": null,
+    "source": "Perfil público; sem assumir telefone incompleto/antigo."
+  },
+  "references": [
+    {
+      "file": "assets/ig-CwnF3aLOdS1-b386cd70be.webp",
+      "sourceFile": "assets/ig-CwnF3aLOdS1-b386cd70be.webp",
+      "postId": "CwnF3aLOdS1",
+      "post": "https://www.instagram.com/gmfestofados/p/CwnF3aLOdS1/",
+      "width": 1440,
+      "height": 1440,
+      "title": "Sofá claro com assento estendido",
+      "description": "Estofado claro, almofadas soltas e detalhes de madeira nos braços.",
+      "category": "Estofados",
+      "role": "hero",
+      "captionsEvidence": {
+        "type": "DOM-alt",
+        "post": "https://www.instagram.com/gmfestofados/p/CwnF3aLOdS1/",
+        "text": "Bicama modelo Dubai 🤍\n\nO sofá mais escolhido nos últimos meses, realmente essa proposta entrega o que promete! \nConforto no máximo nível e sofisticação pelo seu desing impecável. 🤩\nAssentos com ampla abertura de 1.70cm \nAlmofadas na fibra siliconada, retrátil e reclinável com estruturação reforçada. \nRevestimento em linho premium. \n\n🥇NOSSO LÍDER! \nFabricamos sob medidas com 2 anos de garantia. \nPara mais informações 62 994782123 Daniella",
+        "limit": "Texto observado na publicação; não comprova preço, disponibilidade ou condições atuais."
+      }
+    },
+    {
+      "file": "assets/ig-DetkcvqEeuc-d2f0753df8.webp",
+      "sourceFile": "assets/ig-DetkcvqEeuc-d2f0753df8.webp",
+      "postId": "DetkcvqEeuc",
+      "post": "https://www.instagram.com/gmfestofados/p/DetkcvqEeuc/",
+      "width": 1350,
+      "height": 1800,
+      "title": "Sofá claro de linhas curvas",
+      "description": "Composição de sofá claro em L, com linhas arredondadas, almofadas soltas e poltrona azul em primeiro plano.",
+      "category": "Estofados",
+      "role": "catalog",
+      "captionsEvidence": {
+        "type": "DOM-alt",
+        "post": "https://www.instagram.com/gmfestofados/p/DetkcvqEeuc/",
+        "text": "Sofá abraço 🤎\nCom curvas elegantes, tons neutros e almofadas que abraçam, ele combina sofisticação e aconchego na medida certa. \nImagine esse sofá no seu lar! 😍\n\nFabricamos personalizado especialmente para o seu lar! \nSolicite o seu orçamento 📲\n\nMedidas: 3.20x2.00m \n\n#sofa #conforto #apartamento #decoraçãodeinteriores #goiânia",
+        "limit": "Texto observado na publicação; não comprova preço, disponibilidade ou condições atuais."
+      }
+    },
+    {
+      "file": "assets/ig-DehpPSIoMXr-68624fe0a1.webp",
+      "sourceFile": "assets/ig-DehpPSIoMXr-68624fe0a1.webp",
+      "postId": "DehpPSIoMXr",
+      "post": "https://www.instagram.com/gmfestofados/p/DehpPSIoMXr/",
+      "width": 1800,
+      "height": 1800,
+      "title": "Sofá com detalhe em madeira",
+      "description": "Braços retos com faixas amadeiradas, almofadas claras e assentos de linhas amplas.",
+      "category": "Estofados",
+      "role": "catalog",
+      "captionsEvidence": {
+        "type": "DOM-alt",
+        "post": "https://www.instagram.com/gmfestofados/p/DehpPSIoMXr/",
+        "text": "Bicama Dubai 🤎 \n\nCada detalhe desse sofá é único… esse modelo foi fabricado sob medida especialmente para esse lar! \nE o resultado ficou incrível 🥹🤩 \n\nMedidas: 2.40x1.10x1.70m\n\nO próximo sofá pode ser o seu.\nMe chama no Direct e vamos juntos planejar!\n\n#sofa #sofaretratil #decoracao #apdecorado #goiânia",
+        "limit": "Texto observado na publicação; não comprova preço, disponibilidade ou condições atuais."
+      }
+    },
+    {
+      "file": "assets/ig-DJCNY8NNnCO-d933206461.webp",
+      "sourceFile": "assets/ig-DJCNY8NNnCO-d933206461.webp",
+      "postId": "DJCNY8NNnCO",
+      "post": "https://www.instagram.com/gmfestofados/reel/DJCNY8NNnCO/",
+      "width": 1012,
+      "height": 1800,
+      "title": "Composição de estofados claros",
+      "description": "Registro de uma composição com sofá claro ao fundo, pufe redondo e poltrona de madeira em primeiro plano. O texto do vídeo permanece na imagem.",
+      "category": "Composição",
+      "role": "catalog",
+      "captionsEvidence": {
+        "type": "DOM-alt",
+        "post": "https://www.instagram.com/gmfestofados/reel/DJCNY8NNnCO/",
+        "text": "Cada módulo, cada encaixe, cada detalhe. \nDo transporte à montagem, tudo feito com exatidão. \nResultado: um ambiente transformado com conforto e elegância 🛋️\nVeja até o final e veja o feedback da nossa cliente 🤩 \nLink na bio para mais informações 📲",
+        "limit": "Texto observado na publicação; não comprova preço, disponibilidade ou condições atuais."
+      }
+    }
+  ],
+  "hero": "assets/ig-CwnF3aLOdS1-b386cd70be.webp",
+  "originalImagesPreserved": 12,
+  "treatments": [],
+  "sourceWindows": [],
+  "followerNote": "Porte maior observado; registrar no hub, sem incluir no fluxo comercial.",
+  "audienceObserved": "35,2mil seguidores"
+}

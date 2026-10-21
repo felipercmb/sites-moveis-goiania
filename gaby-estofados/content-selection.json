@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "slug": "gaby-estofados",
+  "name": "Estofados Gaby",
+  "profile": "https://www.instagram.com/estofadosgaby_oficial/",
+  "handle": "estofadosgaby_oficial",
+  "observedAt": "2026-10-21",
+  "city": "Avenida Presidente Juscelino Kubitscheck, Q.Ch, Lote 1A, S/N, Jardim Presidente, Goiânia",
+  "contact": {
+    "channel": "official-link",
+    "url": "https://contate.me/estofadosgaby",
+    "evidence": "Link oficial da bio: https://contate.me/estofadosgaby. Não reutilizar telefone/email/domínio embutidos nas artes antigas."
+  },
+  "cover": {
+    "file": "assets/ig-DETNtZgPACX-6a421ed5d8.webp",
+    "width": 1440,
+    "height": 1440,
+    "post": "https://www.instagram.com/estofadosgaby_oficial/p/DETNtZgPACX/",
+    "name": "Poltrona verde"
+  },
+  "referenceCount": 4,
+  "selected": [
+    {
+      "name": "Poltrona verde",
+      "file": "assets/ig-DETNtZgPACX-6a421ed5d8.webp",
+      "width": 1440,
+      "height": 1440,
+      "post": "https://www.instagram.com/estofadosgaby_oficial/p/DETNtZgPACX/",
+      "category": "poltronas",
+      "description": "Registro da poltrona verde, com braços retos e pés em tom amadeirado.",
+      "sourceEvidenceType": "DOM public alt/caption and visual inspection of imported photograph",
+      "captured": "2026-10-21",
+      "sourceVisualKind": "direct_product_photo"
+    },
+    {
+      "name": "Sofá azul com puff",
+      "file": "assets/sofa-azul-puff-tratado-v10.webp",
+      "width": 1254,
+      "height": 1254,
+      "post": "https://www.instagram.com/estofadosgaby_oficial/p/CSZXDQ2r4qm/",
+      "category": "sofas",
+      "description": "Referência de sofá azul com puff e almofadas coloridas, publicada no perfil da marca.",
+      "sourceEvidenceType": "DOM public alt/caption and visual inspection of imported photograph",
+      "captured": "2026-10-21",
+      "sourceVisualKind": "treated_branded_publication_reference",
+      "sourceFile": "assets/ig-CSZXDQ2r4qm-26e1c5e50b.webp",
+      "aiTreatment": true,
+      "disclosure": "Referência com tratamento de IA"
+    },
+    {
+      "name": "Sofá azul de dois assentos",
+      "file": "assets/sofa-azul-dois-assentos-tratado-v10.webp",
+      "width": 1254,
+      "height": 1254,
+      "post": "https://www.instagram.com/estofadosgaby_oficial/p/COQGsDjhhJA/",
+      "category": "sofas",
+      "description": "Referência de sofá de braços retos, apresentada em um ambiente com parede cinza.",
+      "sourceEvidenceType": "DOM public alt/caption and visual inspection of imported photograph",
+      "captured": "2026-10-21",
+      "sourceVisualKind": "treated_branded_publication_reference",
+      "sourceFile": "assets/ig-COQGsDjhhJA-0fa7a65e3c.webp",
+      "aiTreatment": true,
+      "disclosure": "Referência com tratamento de IA"
+    },
+    {
+      "name": "Poltrona rosa de braços retos",
+      "file": "assets/poltrona-rosa-tratado-v10.webp",
+      "width": 1254,
+      "height": 1254,
+      "post": "https://www.instagram.com/estofadosgaby_oficial/p/CM4jfa8BPHw/",
+      "category": "poltronas",
+      "description": "Referência de poltrona rosa, com braços retos e base em tom amadeirado.",
+      "sourceEvidenceType": "DOM public alt/caption and visual inspection of imported photograph",
+      "captured": "2026-10-21",
+      "sourceVisualKind": "treated_branded_publication_reference",
+      "sourceFile": "assets/ig-CM4jfa8BPHw-3518914b7d.webp",
+      "aiTreatment": true,
+      "disclosure": "Referência com tratamento de IA"
+    }
+  ],
+  "sourceRecord": "_research/lote3/instagram-gaby-estofados.json",
+  "assetManifest": "assets.json",
+  "aiTreatment": true,
+  "limits": [
+    "Publicações são referências; não afirmar preço, estoque, prazo, garantia ou condição comercial atual.",
+    "A descrição visual não afirma material ou especificação técnica não observada."
+  ],
+  "selectionInspection": "Todos os16originais inspecionados; três tratamentos nativos comparados com as fontes. Bordas/texto removidos sem recortar o móvel. Reconstrução limitada aos pixels encobertos pelo rodapé; disclosure e original acessíveis.",
+  "followersObserved": 145,
+  "postsObserved": 16,
+  "sourceLimit": "Um registro direto (poltrona verde) e três referências publicadas pelo perfil, tratadas apenas para remover publicidade embutida. Publicação não comprova fabricação/autoria do móvel.",
+  "aiTreatedReferenceCount": 3
+}

@@ -1,0 +1,148 @@
+{
+  "slug": "incantare-interiores",
+  "name": "Incantare Interiores",
+  "handle": "loja_incantareinteriores",
+  "profile": "https://www.instagram.com/loja_incantareinteriores/",
+  "captured": "2026-10-21",
+  "city": "Goiânia",
+  "locationNote": "Cidade confirmada no perfil; endereço omitido.",
+  "contact": {
+    "mode": "whatsapp",
+    "whatsapp": "5562992021018",
+    "source": "Bio pública observada em2026-10-21"
+  },
+  "references": [
+    {
+      "file": "assets/ig-DdY1RYYli11-b918604ed5.webp",
+      "sourceFile": "assets/ig-DdY1RYYli11-b918604ed5.webp",
+      "postId": "DdY1RYYli11",
+      "post": "https://www.instagram.com/loja_incantareinteriores/p/DdY1RYYli11/",
+      "width": 1440,
+      "height": 1440,
+      "title": "Sofá cinza com base amadeirada",
+      "description": "Sofá de braços retos, encostos divididos e faixa de madeira junto à base.",
+      "category": "Estofados",
+      "role": "hero",
+      "captionsEvidence": {
+        "type": "DOM-alt",
+        "post": "https://www.instagram.com/loja_incantareinteriores/p/DdY1RYYli11/",
+        "text": "Conforto, elegância e aquele sofá que transforma a sala inteira! 🛋️\n\nChame a gente agora mesmo e escolha o seu modelo que mais combina com o seu ambiente! 📲\n\n#móveis #sofaminimalis #goiânia #vendasgoiânia",
+        "limit": "Texto observado na publicação; não comprova preço, disponibilidade ou condições atuais."
+      }
+    },
+    {
+      "file": "assets/ig-DdJ5xaQDr1A-893efc95aa.webp",
+      "sourceFile": "assets/ig-DdJ5xaQDr1A-893efc95aa.webp",
+      "postId": "DdJ5xaQDr1A",
+      "post": "https://www.instagram.com/loja_incantareinteriores/p/DdJ5xaQDr1A/",
+      "width": 1440,
+      "height": 1440,
+      "title": "Sala de estofados curvos",
+      "description": "Vista superior de uma composição clara com sofá curvo, mesa central e assentos de apoio.",
+      "category": "Estofados",
+      "role": "catalog",
+      "captionsEvidence": {
+        "type": "DOM-alt",
+        "post": "https://www.instagram.com/loja_incantareinteriores/p/DdJ5xaQDr1A/",
+        "text": "Conforto que transforma o ambiente. ✨🤍 \nSofás que unem design, elegância e aquele aconchego que a sua sala merece!\n\n#sofaorganico \n#móveisdeluxo \n#goiania",
+        "limit": "Texto observado na publicação; não comprova preço, disponibilidade ou condições atuais."
+      }
+    },
+    {
+      "file": "assets/ig-DdjYktqOoQS-488c716dd5.webp",
+      "sourceFile": "assets/ig-DdjYktqOoQS-488c716dd5.webp",
+      "postId": "DdjYktqOoQS",
+      "post": "https://www.instagram.com/loja_incantareinteriores/reel/DdjYktqOoQS/",
+      "width": 1012,
+      "height": 1800,
+      "title": "Sofá escuro com estrutura de madeira",
+      "description": "Vista em ângulo do estofado escuro com braços retos e estrutura amadeirada aparente.",
+      "category": "Estofados",
+      "role": "catalog",
+      "captionsEvidence": {
+        "type": "DOM-alt",
+        "post": "https://www.instagram.com/loja_incantareinteriores/reel/DdjYktqOoQS/",
+        "text": "Venha conhecer nosso sofá Veneza, aquele sofá fixo que encanta 🛋️\n\n(62) 99202-1018 - Layla 📲\n\n#goiania #sofá #sofáfixo #móveisdeluxo",
+        "limit": "Texto observado na publicação; não comprova preço, disponibilidade ou condições atuais."
+      }
+    },
+    {
+      "file": "assets/ig-DekW5ahCUbr-1e1e9cdb70.webp",
+      "sourceFile": "assets/ig-DekW5ahCUbr-1e1e9cdb70.webp",
+      "postId": "DekW5ahCUbr",
+      "post": "https://www.instagram.com/loja_incantareinteriores/p/DekW5ahCUbr/",
+      "width": 1350,
+      "height": 1800,
+      "title": "Mesa com bases ripadas em curva",
+      "description": "Mesa retangular amadeirada com duas bases de ripas e cadeiras estofadas ao redor.",
+      "category": "Jantar",
+      "role": "catalog",
+      "captionsEvidence": {
+        "type": "DOM-alt",
+        "post": "https://www.instagram.com/loja_incantareinteriores/p/DekW5ahCUbr/",
+        "text": "✨ O detalhe que transforma sua sala de jantar!\n\nMesas que unem beleza, elegância e funcionalidade para deixar cada refeição ainda mais especial. 🏡🤎\n\nDeslize para conferir nossos modelos e encontre a mesa perfeita para sua casa!\n\n📍 Venha conhecer a Incantare Estofados e se encantar com nossas opções.\n\n📲 Entre em contato e faça seu orçamento!",
+        "limit": "Texto observado na publicação; não comprova preço, disponibilidade ou condições atuais."
+      }
+    },
+    {
+      "file": "assets/ig-DbvxyA7uXdO-287f0e9696.webp",
+      "sourceFile": "assets/ig-DbvxyA7uXdO-287f0e9696.webp",
+      "postId": "DbvxyA7uXdO",
+      "post": "https://www.instagram.com/loja_incantareinteriores/p/DbvxyA7uXdO/",
+      "width": 1484,
+      "height": 1800,
+      "title": "Mesa redonda e cadeiras claras",
+      "description": "Conjunto de mesa redonda, prato central e cadeiras com estrutura de madeira e estofado claro.",
+      "category": "Jantar",
+      "role": "catalog",
+      "captionsEvidence": {
+        "type": "DOM-alt",
+        "post": "https://www.instagram.com/loja_incantareinteriores/p/DbvxyA7uXdO/",
+        "text": "Venha conhecer nossa loja e se encantar com esse conjunto de mesa com cadeiras!\n\nEstamos esperando sua visita!\n\n#mesadecorada #móveis #goiânia",
+        "limit": "Texto observado na publicação; não comprova preço, disponibilidade ou condições atuais."
+      }
+    },
+    {
+      "file": "assets/ig-Da5cqBDloyS-f682657e68.webp",
+      "sourceFile": "assets/ig-Da5cqBDloyS-f682657e68.webp",
+      "postId": "Da5cqBDloyS",
+      "post": "https://www.instagram.com/loja_incantareinteriores/p/Da5cqBDloyS/",
+      "width": 1350,
+      "height": 1800,
+      "title": "Mesa retangular com cantos suaves",
+      "description": "Mesa de madeira com cantos arredondados e cadeiras claras, fotografada na loja.",
+      "category": "Jantar",
+      "role": "catalog",
+      "captionsEvidence": {
+        "type": "DOM-alt",
+        "post": "https://www.instagram.com/loja_incantareinteriores/p/Da5cqBDloyS/",
+        "text": "Jogo de mesa perfeito para a sua casa , venha garantir o seu",
+        "limit": "Texto observado na publicação; não comprova preço, disponibilidade ou condições atuais."
+      }
+    },
+    {
+      "file": "assets/ig-Dbvyh_rFPFc-a5b0577fd3.webp",
+      "sourceFile": "assets/ig-Dbvyh_rFPFc-a5b0577fd3.webp",
+      "postId": "Dbvyh_rFPFc",
+      "post": "https://www.instagram.com/loja_incantareinteriores/p/Dbvyh_rFPFc/",
+      "width": 1350,
+      "height": 1800,
+      "title": "Cadeira de encosto arredondado",
+      "description": "Detalhe de uma cadeira: encosto curvo de madeira e assento estofado claro.",
+      "category": "Detalhes",
+      "role": "catalog",
+      "captionsEvidence": {
+        "type": "DOM-alt",
+        "post": "https://www.instagram.com/loja_incantareinteriores/p/Dbvyh_rFPFc/",
+        "text": "Quando qualidade e beleza se encontram, o resultado é esse ✨\n\nObserve cada detalhe desta cadeira e imagine ela na sua casa! 🪑\n\n#cadeira #móveisplanejados #vendasinstagram #goiânia",
+        "limit": "Texto observado na publicação; não comprova preço, disponibilidade ou condições atuais."
+      }
+    }
+  ],
+  "hero": "assets/ig-DdY1RYYli11-b918604ed5.webp",
+  "originalImagesPreserved": 12,
+  "treatments": [],
+  "sourceWindows": [],
+  "followerNote": null,
+  "audienceObserved": "9.988seguidores"
+}

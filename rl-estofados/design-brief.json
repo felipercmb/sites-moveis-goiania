@@ -1,0 +1,17 @@
+{
+  "slug": "rl-estofados",
+  "palette": {
+    "canvas": "#FAF9F4",
+    "ink": "#202722",
+    "green": "#425C4D",
+    "warmWood": "#A77B55"
+  },
+  "typography": {
+    "headings": "Bricolage Grotesque",
+    "body": "Manrope"
+  },
+  "layout": "Editorial claro e orgânico: sofá curvo como hero, dupla de poltronas em destaque e cards de proporção natural. Catálogo curto sem filtro enquanto só houver quatro fotos. Seções fabricação/reforma ancoradas na bio, sem antes/depois inventado.",
+  "frameContract": "v9, fluxo natural,8px,proporção real,sem cover/zoom e sem recortar móveis.",
+  "consultation": "Referência com post + medidas + texto editável; canal somente o observado e confirmado. Nenhum envio automático.",
+  "status": "Aguarda partição build e verificação final do root."
+}

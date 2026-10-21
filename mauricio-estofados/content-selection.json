@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "slug": "mauricio-estofados",
+  "name": "Maurício Estofados",
+  "profile": "https://www.instagram.com/mauricio_estofados062/",
+  "handle": "mauricio_estofados062",
+  "observedAt": "2026-10-21",
+  "city": null,
+  "contact": {
+    "channel": "whatsapp",
+    "url": "https://wa.me/5562999180368",
+    "evidence": "Bio/link público ou caption da captura instagram-mauricio-estofados.json"
+  },
+  "cover": {
+    "file": "assets/ig-DbMdkEtloDN-7f97e7246a.webp",
+    "width": 1440,
+    "height": 1440,
+    "post": "https://www.instagram.com/mauricio_estofados062/p/DbMdkEtloDN/",
+    "name": "Detalhe do sofá Paris"
+  },
+  "referenceCount": 6,
+  "selected": [
+    {
+      "name": "Detalhe do sofá fixo com chaise",
+      "file": "assets/ig-Deo6QjaFlNq-527d9c79e0.webp",
+      "width": 1440,
+      "height": 1440,
+      "post": "https://www.instagram.com/mauricio_estofados062/p/Deo6QjaFlNq/",
+      "category": "estofados",
+      "description": "Vista lateral do sofá fixo com chaise acoplada, apresentado como um projeto sob medida.",
+      "sourceEvidenceType": "DOM public alt/caption and visual inspection of imported photograph",
+      "captured": "2026-10-21"
+    },
+    {
+      "name": "Detalhe do sofá de canto cinza",
+      "file": "assets/ig-Dc3nheAFlOw-8e06381f21.webp",
+      "width": 1440,
+      "height": 1440,
+      "post": "https://www.instagram.com/mauricio_estofados062/p/Dc3nheAFlOw/",
+      "category": "estofados",
+      "description": "Vista próxima dos assentos e da união do canto. A fotografia original já apresenta a peça parcialmente.",
+      "sourceEvidenceType": "DOM public alt/caption and visual inspection of imported photograph",
+      "captured": "2026-10-21"
+    },
+    {
+      "name": "Reforma de sofá com braços em tom amadeirado",
+      "file": "assets/ig-DYqCxC8Fscr-096c1689fd.webp",
+      "width": 1440,
+      "height": 1440,
+      "post": "https://www.instagram.com/mauricio_estofados062/p/DYqCxC8Fscr/",
+      "category": "reforma",
+      "description": "Registro da peça renovada, com estofado marrom e braços em tom amadeirado.",
+      "sourceEvidenceType": "DOM public alt/caption and visual inspection of imported photograph",
+      "captured": "2026-10-21"
+    },
+    {
+      "name": "Closet com iluminação nas prateleiras",
+      "file": "assets/ig-DYNQC3ilpEO-542e7cfbef.webp",
+      "width": 1440,
+      "height": 1440,
+      "post": "https://www.instagram.com/mauricio_estofados062/p/DYNQC3ilpEO/",
+      "category": "planejados",
+      "description": "Projeto de closet sob medida, com prateleiras abertas e iluminação integrada.",
+      "sourceEvidenceType": "DOM public alt/caption and visual inspection of imported photograph",
+      "captured": "2026-10-21"
+    },
+    {
+      "name": "Detalhe do sofá Pilotop",
+      "file": "assets/ig-DbwcT9LllFr-a866e28d73.webp",
+      "width": 1440,
+      "height": 1440,
+      "post": "https://www.instagram.com/mauricio_estofados062/p/DbwcT9LllFr/",
+      "category": "estofados",
+      "description": "Vista lateral do modelo Pilotop, apresentado como fabricação sob medida, com braço almofadado e porta-copo retrátil.",
+      "sourceEvidenceType": "DOM public alt/caption and visual inspection of imported photograph",
+      "captured": "2026-10-21"
+    },
+    {
+      "name": "Detalhe do sofá Paris",
+      "file": "assets/ig-DbMdkEtloDN-7f97e7246a.webp",
+      "width": 1440,
+      "height": 1440,
+      "post": "https://www.instagram.com/mauricio_estofados062/p/DbMdkEtloDN/",
+      "category": "estofados",
+      "description": "Vista próxima do modelo Paris, com costuras que desenham assentos, braços e encostos.",
+      "sourceEvidenceType": "DOM public alt/caption and visual inspection of imported photograph",
+      "captured": "2026-10-21"
+    }
+  ],
+  "sourceRecord": "_research/lote3/instagram-mauricio-estofados.json",
+  "assetManifest": "assets.json",
+  "aiTreatment": false,
+  "limits": [
+    "Publicações são referências; não afirmar preço, estoque, prazo, garantia ou condição comercial atual.",
+    "A descrição visual não afirma material ou especificação técnica não observada.",
+    "Sem endereço externo inferido para RL/Prime."
+  ],
+  "selectionInspection": "Contact sheet via view_image; hero inspected individually; rejected faces, text-heavy offers, screenshots and duplicates.",
+  "followersObserved": 2133,
+  "postsObserved": 202,
+  "localityEvidence": "Ainda não confirmada; não afirmar Goiânia nem endereço. Captura comprova fabricação/reforma e contato oficial."
+}

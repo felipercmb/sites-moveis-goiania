@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "slug": "prime-estofados",
+  "name": "Prime Estofados",
+  "profile": "https://www.instagram.com/primeestofadosgoiania/",
+  "handle": "primeestofadosgoiania",
+  "observedAt": "2026-10-21",
+  "city": "Atendimento em Goiânia e região",
+  "contact": {
+    "channel": "whatsapp-short",
+    "url": "https://wa.me/message/4D7G3FRGQS7FH1",
+    "evidence": "Bio/link público ou caption da captura instagram-prime-estofados.json"
+  },
+  "cover": {
+    "file": "assets/ig-Decy7BRyEc5-c4322ab736.webp",
+    "width": 1586,
+    "height": 1800,
+    "post": "https://www.instagram.com/primeestofadosgoiania/p/Decy7BRyEc5/",
+    "name": "Sofá claro com assento retrátil"
+  },
+  "referenceCount": 6,
+  "selected": [
+    {
+      "name": "Modelo Barcelona",
+      "file": "assets/ig-DeRasbVEdw2-04f218f342.webp",
+      "width": 1200,
+      "height": 1600,
+      "post": "https://www.instagram.com/primeestofadosgoiania/p/DeRasbVEdw2/",
+      "category": "barcelona",
+      "description": "Referência do modelo Barcelona com encosto bipartido e assentos estendidos.",
+      "sourceEvidenceType": "DOM public alt/caption and visual inspection of imported photograph",
+      "captured": "2026-10-21"
+    },
+    {
+      "name": "Sofá claro com assento retrátil",
+      "file": "assets/ig-Decy7BRyEc5-c4322ab736.webp",
+      "width": 1586,
+      "height": 1800,
+      "post": "https://www.instagram.com/primeestofadosgoiania/p/Decy7BRyEc5/",
+      "category": "retrateis",
+      "description": "Assentos retráteis, almofadas divididas e apoios nos braços. A publicação apresenta produção sob encomenda.",
+      "sourceEvidenceType": "DOM public alt/caption and visual inspection of imported photograph",
+      "captured": "2026-10-21"
+    },
+    {
+      "name": "Sofá claro de costuras marcadas",
+      "file": "assets/ig-DdDJCA0tDQr-bc2f53ad6b.webp",
+      "width": 1350,
+      "height": 1800,
+      "post": "https://www.instagram.com/primeestofadosgoiania/p/DdDJCA0tDQr/",
+      "category": "retrateis",
+      "description": "Vista lateral dos assentos abertos e do encosto com divisões acolchoadas.",
+      "sourceEvidenceType": "DOM public alt/caption and visual inspection of imported photograph",
+      "captured": "2026-10-21"
+    },
+    {
+      "name": "Esmeralda personalizado",
+      "file": "assets/ig-DdDIsuANOIF-29a6d6d078.webp",
+      "width": 1350,
+      "height": 1800,
+      "post": "https://www.instagram.com/primeestofadosgoiania/p/DdDIsuANOIF/",
+      "category": "esmeralda",
+      "description": "A publicação apresenta a personalização do modelo Esmeralda com porta-copos e USB nos braços.",
+      "sourceEvidenceType": "DOM public alt/caption and visual inspection of imported photograph",
+      "captured": "2026-10-21"
+    },
+    {
+      "name": "Esmeralda em linho cinza-claro",
+      "file": "assets/ig-DdDIkh2tXJl-2ba2d87f6f.webp",
+      "width": 1350,
+      "height": 1800,
+      "post": "https://www.instagram.com/primeestofadosgoiania/p/DdDIkh2tXJl/",
+      "category": "esmeralda",
+      "description": "Modelo Esmeralda apresentado em tecido linho, na cor cinza-claro.",
+      "sourceEvidenceType": "DOM public alt/caption and visual inspection of imported photograph",
+      "captured": "2026-10-21"
+    },
+    {
+      "name": "Barcelona Premium",
+      "file": "assets/ig-Db8I76jR4ag-efcd68ced0.webp",
+      "width": 1350,
+      "height": 1800,
+      "post": "https://www.instagram.com/primeestofadosgoiania/p/Db8I76jR4ag/",
+      "category": "barcelona",
+      "description": "Variação Barcelona Premium, apresentada em linho com costura acoplada.",
+      "sourceEvidenceType": "DOM public alt/caption and visual inspection of imported photograph",
+      "captured": "2026-10-21"
+    }
+  ],
+  "sourceRecord": "_research/lote3/instagram-prime-estofados.json",
+  "assetManifest": "assets.json",
+  "aiTreatment": false,
+  "limits": [
+    "Publicações são referências; não afirmar preço, estoque, prazo, garantia ou condição comercial atual.",
+    "A descrição visual não afirma material ou especificação técnica não observada.",
+    "Sem endereço externo inferido para RL/Prime."
+  ],
+  "selectionInspection": "Contact sheet via view_image; hero inspected individually; rejected faces, text-heavy offers, screenshots and duplicates.",
+  "followersObserved": 9330,
+  "postsObserved": 400
+}

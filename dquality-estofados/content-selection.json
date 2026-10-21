@@ -1,0 +1,130 @@
+{
+  "slug": "dquality-estofados",
+  "name": "DQuality Estofados",
+  "handle": "dqual_ity",
+  "profile": "https://www.instagram.com/dqual_ity/",
+  "captured": "2026-10-21",
+  "city": "Aparecida de Goiânia",
+  "locationNote": "Cidade confirmada no perfil; endereço omitido.",
+  "contact": {
+    "mode": "instagram-copy",
+    "whatsapp": null,
+    "source": "Perfil público; sem assumir telefone incompleto/antigo."
+  },
+  "references": [
+    {
+      "file": "assets/ig-CvJDvYMtC2S-87471daea3.webp",
+      "sourceFile": "assets/ig-CvJDvYMtC2S-87471daea3.webp",
+      "postId": "CvJDvYMtC2S",
+      "post": "https://www.instagram.com/dqual_ity/p/CvJDvYMtC2S/",
+      "width": 603,
+      "height": 603,
+      "title": "Sofá grafite de módulos retos",
+      "description": "Vista frontal de um estofado escuro, com encostos divididos e assentos de desenho quadrado.",
+      "category": "Estofados",
+      "role": "hero",
+      "captionsEvidence": {
+        "type": "DOM-alt",
+        "post": "https://www.instagram.com/dqual_ity/p/CvJDvYMtC2S/",
+        "text": "",
+        "limit": "Texto observado na publicação; não comprova preço, disponibilidade ou condições atuais."
+      }
+    },
+    {
+      "file": "assets/ig-CvJDalxNbFv-d08f2570a7.webp",
+      "sourceFile": "assets/ig-CvJDalxNbFv-d08f2570a7.webp",
+      "postId": "CvJDalxNbFv",
+      "post": "https://www.instagram.com/dqual_ity/p/CvJDalxNbFv/",
+      "width": 542,
+      "height": 542,
+      "title": "Cinza com assentos estendidos",
+      "description": "Tecido cinza, três encostos almofadados e apoios frontais alongados. A foto mostra a peça em ângulo.",
+      "category": "Estofados",
+      "role": "catalog",
+      "captionsEvidence": {
+        "type": "DOM-alt",
+        "post": "https://www.instagram.com/dqual_ity/p/CvJDalxNbFv/",
+        "text": "Aquele sofa no linho pta sua sala",
+        "limit": "Texto observado na publicação; não comprova preço, disponibilidade ou condições atuais."
+      }
+    },
+    {
+      "file": "assets/ig-CkjNg8KuFHb-5d9e5afcf4.webp",
+      "sourceFile": "assets/ig-CkjNg8KuFHb-5d9e5afcf4.webp",
+      "postId": "CkjNg8KuFHb",
+      "post": "https://www.instagram.com/dqual_ity/p/CkjNg8KuFHb/",
+      "width": 1080,
+      "height": 1080,
+      "title": "Claro com costuras marcadas",
+      "description": "Dois encostos segmentados, braços acolchoados e assentos claros em uma vista aproximada.",
+      "category": "Estofados",
+      "role": "catalog",
+      "captionsEvidence": {
+        "type": "DOM-alt",
+        "post": "https://www.instagram.com/dqual_ity/p/CkjNg8KuFHb/",
+        "text": "Estofado a pronta entrega 1.700 a vista ou em ate 10vezes no cartão sem juro",
+        "limit": "Texto observado na publicação; não comprova preço, disponibilidade ou condições atuais."
+      }
+    },
+    {
+      "file": "assets/ig-CvJDjcdt2pH-02c170d779.webp",
+      "sourceFile": "assets/ig-CvJDjcdt2pH-02c170d779.webp",
+      "postId": "CvJDjcdt2pH",
+      "post": "https://www.instagram.com/dqual_ity/p/CvJDjcdt2pH/",
+      "width": 536,
+      "height": 536,
+      "title": "Azul com desenho quadriculado",
+      "description": "O azul aparece nos encostos e no assento amplo. Registro em ângulo, com parte da lateral fora da fotografia.",
+      "category": "Detalhes",
+      "role": "catalog",
+      "captionsEvidence": {
+        "type": "DOM-alt",
+        "post": "https://www.instagram.com/dqual_ity/p/CvJDjcdt2pH/",
+        "text": "",
+        "limit": "Texto observado na publicação; não comprova preço, disponibilidade ou condições atuais."
+      }
+    },
+    {
+      "file": "assets/ig-CvqY0HurxBx-a95d7ed128.webp",
+      "sourceFile": "assets/ig-CvqY0HurxBx-a95d7ed128.webp",
+      "postId": "CvqY0HurxBx",
+      "post": "https://www.instagram.com/dqual_ity/p/CvqY0HurxBx/",
+      "width": 507,
+      "height": 507,
+      "title": "Almofadas claras com borda",
+      "description": "Detalhe das almofadas soltas e do acabamento aparente em um estofado claro.",
+      "category": "Detalhes",
+      "role": "catalog",
+      "captionsEvidence": {
+        "type": "DOM-alt",
+        "post": "https://www.instagram.com/dqual_ity/p/CvqY0HurxBx/",
+        "text": "Corra e ja peça o seu",
+        "limit": "Texto observado na publicação; não comprova preço, disponibilidade ou condições atuais."
+      }
+    },
+    {
+      "file": "assets/ig-CvqYsqGLO6r-55370aed96.webp",
+      "sourceFile": "assets/ig-CvqYsqGLO6r-55370aed96.webp",
+      "postId": "CvqYsqGLO6r",
+      "post": "https://www.instagram.com/dqual_ity/p/CvqYsqGLO6r/",
+      "width": 670,
+      "height": 670,
+      "title": "Caramelo e volumes acolchoados",
+      "description": "Vista aproximada do tom caramelo, das divisões do encosto e dos braços acolchoados.",
+      "category": "Detalhes",
+      "role": "catalog",
+      "captionsEvidence": {
+        "type": "DOM-alt",
+        "post": "https://www.instagram.com/dqual_ity/p/CvqYsqGLO6r/",
+        "text": "Aquele estofado com elegância pra sua sala",
+        "limit": "Texto observado na publicação; não comprova preço, disponibilidade ou condições atuais."
+      }
+    }
+  ],
+  "hero": "assets/ig-CvJDvYMtC2S-87471daea3.webp",
+  "originalImagesPreserved": 12,
+  "treatments": [],
+  "sourceWindows": [],
+  "followerNote": null,
+  "audienceObserved": "72seguidores"
+}

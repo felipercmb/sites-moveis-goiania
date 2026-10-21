@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "slug": "nunes-estofados",
+  "name": "Nunes Estofados",
+  "profile": "https://www.instagram.com/nunes_estofados062/",
+  "handle": "nunes_estofados062",
+  "observedAt": "2026-10-21",
+  "city": "Rua 1007, Quadra 53, Lote 21, Setor Pedro Ludovico, Goiânia",
+  "contact": {
+    "channel": "official-link",
+    "url": "https://contate.me/5562991012314",
+    "evidence": "Bio/link público ou caption da captura instagram-nunes-estofados.json"
+  },
+  "cover": {
+    "file": "assets/ig-DNPLp_YsC1P-ac6156cca5.webp",
+    "width": 1440,
+    "height": 810,
+    "post": "https://www.instagram.com/nunes_estofados062/p/DNPLp_YsC1P/",
+    "name": "Sofá vinho sob medida"
+  },
+  "referenceCount": 6,
+  "selected": [
+    {
+      "name": "Sofá azul-escuro com puffs",
+      "file": "assets/ig-DNPLwMDsbJM-866f75157b.webp",
+      "width": 1196,
+      "height": 1196,
+      "post": "https://www.instagram.com/nunes_estofados062/p/DNPLwMDsbJM/",
+      "category": "sofas",
+      "description": "Assentos abertos e apoios nos braços. O registro mostra o sofá acompanhado de puffs.",
+      "sourceEvidenceType": "DOM public alt/caption and visual inspection of imported photograph",
+      "captured": "2026-10-21"
+    },
+    {
+      "name": "Sofá cinza de assentos amplos",
+      "file": "assets/ig-DNPLXDsMK8H-0ff1866864.webp",
+      "width": 1200,
+      "height": 1200,
+      "post": "https://www.instagram.com/nunes_estofados062/p/DNPLXDsMK8H/",
+      "category": "sofas",
+      "description": "Vista do sofá no ambiente, com encosto dividido e assentos estendidos.",
+      "sourceEvidenceType": "DOM public alt/caption and visual inspection of imported photograph",
+      "captured": "2026-10-21"
+    },
+    {
+      "name": "Poltronas de encosto em leque",
+      "file": "assets/ig-DNPLAgQsS4j-04066479c5.webp",
+      "width": 682,
+      "height": 682,
+      "post": "https://www.instagram.com/nunes_estofados062/p/DNPLAgQsS4j/",
+      "category": "poltronas",
+      "description": "Duas poltronas com encosto canelado em leque e pés em tom amadeirado.",
+      "sourceEvidenceType": "DOM public alt/caption and visual inspection of imported photograph",
+      "captured": "2026-10-21"
+    },
+    {
+      "name": "Sofá claro em composição de canto",
+      "file": "assets/ig-DObJdcnjfoM-c8cfa40afe.webp",
+      "width": 1440,
+      "height": 810,
+      "post": "https://www.instagram.com/nunes_estofados062/p/DObJdcnjfoM/",
+      "category": "sofas",
+      "description": "Composição clara que acompanha duas paredes do ambiente, em uma vista panorâmica.",
+      "sourceEvidenceType": "DOM public alt/caption and visual inspection of imported photograph",
+      "captured": "2026-10-21"
+    },
+    {
+      "name": "Capas para móveis externos",
+      "file": "assets/ig-DOE7DI_DQo2-3260adbdd5.webp",
+      "width": 900,
+      "height": 1200,
+      "post": "https://www.instagram.com/nunes_estofados062/p/DOE7DI_DQo2/",
+      "category": "capas",
+      "description": "Registro de móveis externos com capas, junto à piscina. A publicação oferece a confecção das capas.",
+      "sourceEvidenceType": "DOM public alt/caption and visual inspection of imported photograph",
+      "captured": "2026-10-21"
+    },
+    {
+      "name": "Sofá vinho sob medida",
+      "file": "assets/ig-DNPLp_YsC1P-ac6156cca5.webp",
+      "width": 1440,
+      "height": 810,
+      "post": "https://www.instagram.com/nunes_estofados062/p/DNPLp_YsC1P/",
+      "category": "sofas",
+      "description": "Assentos abertos e encosto dividido. A publicação apresenta fabricação sob medida.",
+      "sourceEvidenceType": "DOM public alt/caption and visual inspection of imported photograph",
+      "captured": "2026-10-21"
+    }
+  ],
+  "sourceRecord": "_research/lote3/instagram-nunes-estofados.json",
+  "assetManifest": "assets.json",
+  "aiTreatment": false,
+  "limits": [
+    "Publicações são referências; não afirmar preço, estoque, prazo, garantia ou condição comercial atual.",
+    "A descrição visual não afirma material ou especificação técnica não observada.",
+    "Sem endereço externo inferido para RL/Prime."
+  ],
+  "selectionInspection": "Contact sheet via view_image; hero inspected individually; rejected faces, text-heavy offers, screenshots and duplicates.",
+  "followersObserved": 57,
+  "postsObserved": 10
+}

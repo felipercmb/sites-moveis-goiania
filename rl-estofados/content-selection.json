@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "slug": "rl-estofados",
+  "name": "RL Estofados",
+  "profile": "https://www.instagram.com/rl_estofadosgoiania/",
+  "handle": "rl_estofadosgoiania",
+  "observedAt": "2026-10-21",
+  "city": "Goiânia e região",
+  "contact": {
+    "channel": "whatsapp",
+    "url": "https://wa.me/5562994899692",
+    "evidence": "Bio/link público ou caption da captura instagram-rl-estofados.json"
+  },
+  "cover": {
+    "file": "assets/ig-DdCJVyUP8tN-54bda51b22.webp",
+    "width": 1280,
+    "height": 1697,
+    "post": "https://www.instagram.com/rl_estofadosgoiania/p/DdCJVyUP8tN/",
+    "name": "Sofá orgânico claro"
+  },
+  "referenceCount": 4,
+  "selected": [
+    {
+      "name": "Sofá orgânico claro",
+      "file": "assets/ig-DdCJVyUP8tN-54bda51b22.webp",
+      "width": 1280,
+      "height": 1697,
+      "post": "https://www.instagram.com/rl_estofadosgoiania/p/DdCJVyUP8tN/",
+      "category": "sofas",
+      "description": "Linhas curvas e encosto contínuo. A publicação apresenta fabricação sob medida, com escolha de tecido e acabamento.",
+      "sourceEvidenceType": "DOM public alt/caption and visual inspection of imported photograph",
+      "captured": "2026-10-21"
+    },
+    {
+      "name": "Sofá retrátil cinza",
+      "file": "assets/ig-DdCIpTOlsj0-92c38e5764.webp",
+      "width": 1284,
+      "height": 1283,
+      "post": "https://www.instagram.com/rl_estofadosgoiania/p/DdCIpTOlsj0/",
+      "category": "sofas",
+      "description": "Assentos retráteis, almofadas de encosto e detalhes em tom amadeirado na base.",
+      "sourceEvidenceType": "DOM public alt/caption and visual inspection of imported photograph",
+      "captured": "2026-10-21"
+    },
+    {
+      "name": "Poltrona Zeus",
+      "file": "assets/ig-DdCIDuizQgA-cda74be1a6.webp",
+      "width": 1226,
+      "height": 1226,
+      "post": "https://www.instagram.com/rl_estofadosgoiania/p/DdCIDuizQgA/",
+      "category": "poltronas",
+      "description": "Braços em tom amadeirado e estofado claro. A referência mostra o par de poltronas no ambiente.",
+      "sourceEvidenceType": "DOM public alt/caption and visual inspection of imported photograph",
+      "captured": "2026-10-21"
+    },
+    {
+      "name": "Mesa redonda com cadeiras",
+      "file": "assets/ig-DdCI6oiPlvj-f21d5e8d8d.webp",
+      "width": 1284,
+      "height": 1284,
+      "post": "https://www.instagram.com/rl_estofadosgoiania/p/DdCI6oiPlvj/",
+      "category": "mesas",
+      "description": "Tampo claro, base em tom amadeirado e cadeiras estofadas ao redor da mesa.",
+      "sourceEvidenceType": "DOM public alt/caption and visual inspection of imported photograph",
+      "captured": "2026-10-21"
+    }
+  ],
+  "sourceRecord": "_research/lote3/instagram-rl-estofados.json",
+  "assetManifest": "assets.json",
+  "aiTreatment": false,
+  "limits": [
+    "Publicações são referências; não afirmar preço, estoque, prazo, garantia ou condição comercial atual.",
+    "A descrição visual não afirma material ou especificação técnica não observada.",
+    "Sem endereço externo inferido para RL/Prime."
+  ],
+  "selectionInspection": "Contact sheet via view_image; hero inspected individually; rejected faces, text-heavy offers, screenshots and duplicates.",
+  "followersObserved": 735,
+  "postsObserved": 46
+}

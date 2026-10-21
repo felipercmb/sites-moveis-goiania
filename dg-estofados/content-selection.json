@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "slug": "dg-estofados",
+  "name": "DG Estofados GYN",
+  "profile": "https://www.instagram.com/dg.estofados.gyn/",
+  "handle": "dg.estofados.gyn",
+  "observedAt": "2026-10-21",
+  "city": "Goiânia, Aparecida de Goiânia e Senador Canedo",
+  "contact": {
+    "channel": "whatsapp",
+    "url": "https://wa.me/5562995499017",
+    "evidence": "Bio/link público ou caption da captura instagram-dg-estofados.json"
+  },
+  "cover": {
+    "file": "assets/ig-DQmzooiCUbg-94c13d9313.webp",
+    "width": 1080,
+    "height": 1080,
+    "post": "https://www.instagram.com/dg.estofados.gyn/p/DQmzooiCUbg/",
+    "name": "Sofá azul com encosto marcado"
+  },
+  "referenceCount": 6,
+  "selected": [
+    {
+      "name": "Sofá azul com encosto marcado",
+      "file": "assets/ig-DQmzooiCUbg-94c13d9313.webp",
+      "width": 1080,
+      "height": 1080,
+      "post": "https://www.instagram.com/dg.estofados.gyn/p/DQmzooiCUbg/",
+      "category": "coloridos",
+      "description": "Azul intenso e costuras que desenham o assento e o encosto. Registro na loja.",
+      "sourceEvidenceType": "DOM public alt/caption and visual inspection of imported photograph",
+      "captured": "2026-10-21"
+    },
+    {
+      "name": "Sofá cinza de encosto dividido",
+      "file": "assets/ig-DPr7bCfCTQi-9a5cf8503a.webp",
+      "width": 1079,
+      "height": 823,
+      "post": "https://www.instagram.com/dg.estofados.gyn/p/DPr7bCfCTQi/",
+      "category": "neutros",
+      "description": "Assentos abertos e encosto com divisões acolchoadas, em uma vista lateral.",
+      "sourceEvidenceType": "DOM public alt/caption and visual inspection of imported photograph",
+      "captured": "2026-10-21"
+    },
+    {
+      "name": "Sofá claro com almofadas lisas",
+      "file": "assets/ig-DJxDFnsJwis-390210fc5a.webp",
+      "width": 1080,
+      "height": 1080,
+      "post": "https://www.instagram.com/dg.estofados.gyn/p/DJxDFnsJwis/",
+      "category": "neutros",
+      "description": "Módulos de assento abertos e almofadas alongadas no encosto.",
+      "sourceEvidenceType": "DOM public alt/caption and visual inspection of imported photograph",
+      "captured": "2026-10-21"
+    },
+    {
+      "name": "Sofá grafite em módulos",
+      "file": "assets/ig-DJxC5bSJ6ki-691304e9f9.webp",
+      "width": 1080,
+      "height": 1080,
+      "post": "https://www.instagram.com/dg.estofados.gyn/p/DJxC5bSJ6ki/",
+      "category": "neutros",
+      "description": "Assentos amplos, encosto marcado e braços retos na referência publicada.",
+      "sourceEvidenceType": "DOM public alt/caption and visual inspection of imported photograph",
+      "captured": "2026-10-21"
+    },
+    {
+      "name": "Sofá vinho",
+      "file": "assets/ig-DJxCDWkperk-1716462f99.webp",
+      "width": 1080,
+      "height": 1080,
+      "post": "https://www.instagram.com/dg.estofados.gyn/p/DJxCDWkperk/",
+      "category": "coloridos",
+      "description": "Revestimento vinho, encosto dividido e costuras aparentes no assento.",
+      "sourceEvidenceType": "DOM public alt/caption and visual inspection of imported photograph",
+      "captured": "2026-10-21"
+    },
+    {
+      "name": "Detalhe do sofá cinza compacto",
+      "file": "assets/ig-DIDLousOtNL-6dd68961b6.webp",
+      "width": 960,
+      "height": 960,
+      "post": "https://www.instagram.com/dg.estofados.gyn/p/DIDLousOtNL/",
+      "category": "neutros",
+      "description": "Vista próxima do assento aberto e das almofadas. Referência para conversar sobre o desenho da peça.",
+      "sourceEvidenceType": "DOM public alt/caption and visual inspection of imported photograph",
+      "captured": "2026-10-21"
+    }
+  ],
+  "sourceRecord": "_research/lote3/instagram-dg-estofados.json",
+  "assetManifest": "assets.json",
+  "aiTreatment": false,
+  "limits": [
+    "Publicações são referências; não afirmar preço, estoque, prazo, garantia ou condição comercial atual.",
+    "A descrição visual não afirma material ou especificação técnica não observada.",
+    "Sem endereço externo inferido para RL/Prime."
+  ],
+  "selectionInspection": "Contact sheet via view_image; hero inspected individually; rejected faces, text-heavy offers, screenshots and duplicates.",
+  "followersObserved": 47,
+  "postsObserved": 17
+}

@@ -1,0 +1,17 @@
+{
+  "slug": "prime-estofados",
+  "palette": {
+    "canvas": "#F4EEE4",
+    "ink": "#181919",
+    "brass": "#AD8D57",
+    "warmGrey": "#D9CEC1"
+  },
+  "typography": {
+    "headings": "Barlow Condensed",
+    "body": "Public Sans"
+  },
+  "layout": "Direção escura e mineral com tipografia estreita e fotografias claras grandes. Catálogo editorial sem excessos dourados; dourado apenas decorativo ou sobre fundo escuro. A foto escolhida tem muito teto, então hero ainda provisório, aguardando referências mais próximas e completas.",
+  "frameContract": "v9, fluxo natural,8px,proporção real,sem cover/zoom e sem recortar móveis.",
+  "consultation": "Referência com post + medidas + texto editável; canal somente o observado e confirmado. Nenhum envio automático.",
+  "status": "Aguarda partição build e verificação final do root."
+}

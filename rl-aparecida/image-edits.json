@@ -1,0 +1,43 @@
+{
+  "accepted": [
+    {
+      "id": "rl-aparecida-cinza",
+      "sourcePost": "DdblirsxYub",
+      "file": "assets/sofa-cinza-limpo-v10.webp",
+      "prompt": "Use case: precise-object-edit. Asset type: fotografia de produto para proposta de site de uma loja de móveis. Edit target: a imagem de referência anexada. Remova somente os textos publicitários, logotipos de anúncio, preços, selos, ícones e banners sobrepostos no fundo/piso, recompondo a parede e o piso com os mesmos materiais. Preserve integralmente o móvel visível, sua cor, tecido, costuras, quantidade e desenho de almofadas, divisões, braços, porta-copos se existentes, pés/rodízios, etiqueta do fabricante no próprio produto, mecanismos e proporções exatas. Preserve também câmera, perspectiva e iluminação fotográfica da referência. Não crie outro modelo, não acrescente peças ou detalhes ao móvel, não remova partes, não corte bordas do produto. Enquadramento elegante, todo o móvel e seus pés visíveis, margens externas pequenas. Resultado único limpo, sem texto de publicidade. Não é uma colagem ou prancha.",
+      "tool": "native image_gen",
+      "status": "accepted",
+      "note": "Limpeza de publicidade; ambientação de referência identificada, consulta ao original obrigatória.",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "rl-aparecida-grafite",
+      "sourcePost": "Dbp-iIrIRd5",
+      "file": "assets/sofa-grafite-limpo-v10.webp",
+      "prompt": "Use case: precise-object-edit. Asset type: fotografia de produto para proposta de site de uma loja de móveis. Edit target: a imagem de referência anexada. Remova somente os textos publicitários, logotipos de anúncio, preços, selos, ícones e banners sobrepostos no fundo/piso, recompondo a parede e o piso com os mesmos materiais. Preserve integralmente o móvel visível, sua cor, tecido, costuras, quantidade e desenho de almofadas, divisões, braços, porta-copos se existentes, pés/rodízios, etiqueta do fabricante no próprio produto, mecanismos e proporções exatas. Preserve também câmera, perspectiva e iluminação fotográfica da referência. Não crie outro modelo, não acrescente peças ou detalhes ao móvel, não remova partes, não corte bordas do produto. Enquadramento elegante, todo o móvel e seus pés visíveis, margens externas pequenas. Resultado único limpo, sem texto de publicidade. Não é uma colagem ou prancha.",
+      "tool": "native image_gen",
+      "status": "accepted",
+      "note": "Limpeza de publicidade; ambientação de referência identificada, consulta ao original obrigatória.",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "rl-aparecida-bege",
+      "sourcePost": "DaK3m_mo5H4",
+      "file": "assets/sofa-bege-limpo-v10.webp",
+      "prompt": "Use case: precise-object-edit. Asset type: fotografia de produto para proposta de site de uma loja de móveis. Edit target: a imagem de referência anexada. Remova somente os textos publicitários, logotipos de anúncio, preços, selos, ícones e banners sobrepostos no fundo/piso, recompondo a parede e o piso com os mesmos materiais. Preserve integralmente o móvel visível, sua cor, tecido, costuras, quantidade e desenho de almofadas, divisões, braços, porta-copos se existentes, pés/rodízios, etiqueta do fabricante no próprio produto, mecanismos e proporções exatas. Preserve também câmera, perspectiva e iluminação fotográfica da referência. Não crie outro modelo, não acrescente peças ou detalhes ao móvel, não remova partes, não corte bordas do produto. Enquadramento elegante, todo o móvel e seus pés visíveis, margens externas pequenas. Resultado único limpo, sem texto de publicidade. Não é uma colagem ou prancha.",
+      "tool": "native image_gen",
+      "status": "accepted",
+      "note": "Limpeza de publicidade; ambientação de referência identificada, consulta ao original obrigatória.",
+      "width": 1254,
+      "height": 1254
+    }
+  ],
+  "discarded": [
+    {
+      "id": "duppar-naturale",
+      "reason": "Etiqueta do fabricante não foi preservada; usar original com janela medida acima da cabeceira."
+    }
+  ]
+}

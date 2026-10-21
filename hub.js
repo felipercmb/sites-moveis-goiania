@@ -6,7 +6,8 @@
   const count = document.getElementById('result-count');
   const empty = document.getElementById('empty-state');
   const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
-  let category = 'all';
+  const requestedBatch = new URLSearchParams(window.location.search).get('lote');
+  let category = requestedBatch === 'estofados' ? 'lote3' : 'all';
   const normalize = value => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase('pt-BR').trim();
 
   const update = () => {
@@ -27,6 +28,8 @@
   document.getElementById('reset-filters').addEventListener('click', () => {
     category = 'all'; search.value = ''; update(); search.focus();
   });
+  // The public batch link initializes the same filter as the visible control.
+  if (category !== 'all') update();
   // Filters only change this page's view; research data and the local previews remain read-only.
   if ('IntersectionObserver' in window && !motion.matches) {
     const observer = new IntersectionObserver(entries => {
