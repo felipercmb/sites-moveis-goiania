@@ -23,3 +23,9 @@ Menu móvel, filtros quando há mais de uma categoria, galeria anterior/próxima
 PRODUCT.md e DESIGN.md registrados antes da implementação. Identidade: Ateliê contemporâneo em verde profundo: fabricar e renovar no mesmo lugar.
 
 Verificação estática de sintaxe/caminhos/vínculos; QA de navegador centralizada pelo agente principal. Nenhum preço, condição promocional, estoque, prazo, garantia, avaliação ou tempo de mercado foi incluído.
+
+## Refinamento v11
+
+Hero mais compacto, fotos naturais com limite proporcional de500px no desktop, corpo400 e títulos com hierarquia. Navegação e ações levam ao orçamento; a fotografia aparece cedo no celular. O campo de tipo de pedido é opcional e começa sem uma categoria pré-escolhida, evitando consultas contraditórias. Todos os pares nome/publicação e as fotos foram preservados. CSS/JS locais usam versão11; Atelier permanece intacto.
+
+Verificação estática e teste da consulta registrados em `_qa/v11/polish-planejados-validation.json`, fora da publicação. Revisão visual em lote sob responsabilidade do agente principal.

@@ -56,6 +56,14 @@ São propostas independentes de redesign, sem vínculo oficial com as empresas. 
 
 O novo conjunto inclui Goiânia e municípios vizinhos identificados nas propostas. Maurício Estofados tem contato com DDD 62, mas o município ainda não foi confirmado. GMF e Sofás Gyn têm presenças sociais maiores; não são apresentados como páginas de baixa audiência. Um domínio aparece nas artes da Gaby, sem confirmação de atividade atual. Contagens sociais foram observadas em 21/10/2026 e não medem alcance ou vendas.
 
+## Refinamento do lote de estofados — 21/10/2026
+
+Os vinte novos sites receberam aberturas mais compactas, tipografia com pesos reais, catálogos com composição própria e acesso ao orçamento pela foto ampliada. No celular, um atalho acompanha a navegação após a abertura e recolhe durante a consulta. Medidas e detalhes ficam em uma seção opcional.
+
+O texto pessoal do visitante permanece ao trocar de peça ou atualizar medidas; apenas o contexto gerado acompanha a seleção atual. As 106 referências, as fotografias e os contatos foram preservados. As vinte propostas anteriores permanecem intactas.
+
+Fontes variáveis Manrope, Public Sans e Instrument Sans foram obtidas do repositório oficial Google Fonts; suas licenças acompanham os arquivos. A galeria, os filtros e os menus existentes continuam na base Atelier; os recursos adicionais estão em `_shared/showroom-v11.css` e `_shared/showroom-v11.js`.
+
 ## Publicação
 
 GitHub Pages publica a raiz da branch `main`. O arquivo `.nojekyll` preserva as pastas de recursos que começam com sublinhado. Não há build, dependências de servidor ou formulários com envio automático.

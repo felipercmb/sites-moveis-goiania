@@ -13,3 +13,5 @@ Prévia local independente. Abra index.html por um servidor HTTP estático.
 PRODUCT.md contém escopo e evidências; DESIGN.md contém tokens e contrato das molduras.
 
 Localidade: Aparecida de Goiânia, conforme Waze cruzado com o mesmo handle e telefone público pelo agente principal. Endereço não publicado.
+
+Revisão v11: hierarquia tipográfica mais leve, foto inteira na abertura do desktop, copy específica e preparação de mensagem com preservação do texto editado. CSS e script locais versionados com?v=11.

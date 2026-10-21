@@ -20,8 +20,12 @@
     if (channel === 'whatsapp') open.href = `${form.dataset.contact}?text=${encodeURIComponent(message.value.trim())}`;
     else open.href = form.dataset.contact;
   };
-  const prepare = () => {
-    const lines = [`Olá, ${form.dataset.business}!`];
+  let lastPrepared = '';
+  let previousContext = [];
+  let edited = false;
+  let writing = false;
+  const contextLines = () => {
+    const lines = [];
     const selectedPost = references.get(choice.value);
     if (choice.value && selectedPost) lines.push(`Gostei da referência: ${choice.value}.`, `Publicação: ${selectedPost}`);
     else lines.push(form.dataset.general);
@@ -34,10 +38,39 @@
     if (measures.length) lines.push(`Espaço disponível — ${measures.join('; ')}.`);
     const idea = form.elements.namedItem('idea').value.trim();
     if (idea) lines.push(`Minha ideia: ${idea}`);
-    lines.push(form.dataset.question);
-    message.value = lines.join('\n');
+    return lines;
+  };
+  const publish = text => {
+    writing = true;
+    message.value = text;
+    message.dispatchEvent(new Event('input', { bubbles: true }));
+    writing = false;
+  };
+  const prepare = () => {
+    const context = contextLines();
+    if (edited && message.value.trim()) {
+      let draft = message.value;
+      const remaining = [...context];
+      // Replace only generated context still present verbatim. Free text stays
+      // intact; the latest reference, post and measurements remain explicit.
+      for (const previous of previousContext) {
+        const key = previous.split(':', 1)[0];
+        const index = remaining.findIndex(line => line.split(':', 1)[0] === key);
+        if (draft.includes(previous)) {
+          draft = draft.replace(previous, index >= 0 ? remaining[index] : '');
+          if (index >= 0) remaining.splice(index, 1);
+        }
+      }
+      const added = remaining.filter(line => !draft.includes(line));
+      publish([draft.trim(), ...added].filter(Boolean).join('\n').replace(/\n{3,}/g, '\n\n'));
+      status.textContent = 'Dados atualizados. Seu texto foi mantido; revise a consulta antes de abrir a conversa.';
+    } else {
+      lastPrepared = [`Olá, ${form.dataset.business}!`, ...context, form.dataset.question].join('\n');
+      publish(lastPrepared);
+      status.textContent = initialStatus;
+    }
+    previousContext = context;
     copy.textContent = 'Copiar consulta';
-    status.textContent = initialStatus;
     updateDestination();
   };
   choice.addEventListener('change', prepare);
@@ -45,13 +78,15 @@
     field.addEventListener(field.tagName === 'SELECT' ? 'change' : 'input', prepare);
   });
   message.addEventListener('input', () => {
+    if (!writing) edited = Boolean(message.value.trim()) && message.value !== lastPrepared;
     copy.textContent = 'Copiar consulta';
     status.textContent = initialStatus;
     updateDestination();
   });
   document.querySelectorAll('[data-piece][data-post]').forEach(link => link.addEventListener('click', () => {
     choice.value = link.dataset.piece;
-    prepare();
+    choice.dispatchEvent(new Event('change', { bubbles: true }));
+    choice.focus({ preventScroll: true });
   }));
   copy.addEventListener('click', async () => {
     const text = message.value.trim();

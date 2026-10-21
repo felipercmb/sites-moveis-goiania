@@ -1,0 +1,41 @@
+/* Presentation and enquiry refinements for the twenty upholstery proposals. */
+.showroom-photo-link{position:relative;display:block}
+.showroom-photo-link::after{content:none!important}
+.showroom-expand{position:absolute;right:14px;bottom:14px;display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--showroom-paper,var(--paper,#fff));color:var(--showroom-ink,var(--ink,#24352f));box-shadow:0 4px 18px #14212a1a;pointer-events:none}
+.showroom-expand svg,.showroom-photo-link :is(.expand,.open-photo,.piece-expand) svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.showroom-chosen{display:inline-flex;align-items:center;min-height:30px;margin-top:10px;padding:4px 10px;border-radius:16px;background:var(--showroom-surface,var(--soft,#e5ebe6));color:var(--showroom-ink,var(--ink,#24352f));font-size:12px;line-height:1.5;font-weight:600}
+.showroom-chosen[hidden],.showroom-dock[hidden],.showroom-photo-actions[hidden]{display:none!important}
+[data-showroom-selected="true"] [data-photo-frame]{outline:2px solid var(--showroom-accent,var(--accent,#38604e));outline-offset:4px}
+.showroom-measures{margin:20px 0 24px;border:1px solid var(--line,#bdc8bf);border-radius:18px;padding:0 16px}
+.showroom-measures>summary{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:58px;cursor:pointer;list-style:none;font-size:15px;line-height:1.5;font-weight:550}
+.showroom-measures>summary::-webkit-details-marker{display:none}
+.showroom-measures>summary svg{width:18px;height:18px;flex:none;fill:none;stroke:currentColor;stroke-width:1.6;transition:rotate .2s ease}
+.showroom-measures[open]>summary svg{rotate:45deg}
+.showroom-measures-body{display:grid;gap:18px;padding:0 0 20px;min-width:0}
+.showroom-measures-body>p{font-size:14px;line-height:1.6;margin:0}
+.showroom-measures-body>fieldset{margin:0;padding:0;border:0;min-width:0}
+.showroom-measures summary:focus-visible,.showroom-dock a:focus-visible,.showroom-photo-actions :is(a,button):focus-visible{outline:3px solid currentColor;outline-offset:4px}
+.showroom-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.showroom-dock{display:none}
+.showroom-photo-actions{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px 22px;align-items:center;margin-top:20px;padding-top:18px;border-top:1px solid currentColor;font-family:var(--showroom-body,var(--body,inherit))}
+.showroom-photo-name{margin:0;max-width:40ch;font-size:18px;font-weight:550;line-height:1.4}
+.showroom-photo-choose{grid-column:2;grid-row:1/3;min-height:48px;padding:11px 21px;border:0;border-radius:28px;background:var(--atelier-lightbox-text,#fff);color:var(--atelier-lightbox-background,#24352f);font:inherit;font-size:15px;font-weight:600;cursor:pointer}
+.showroom-photo-actions>a{justify-self:start;display:inline-flex;align-items:center;min-height:44px;font-size:13px;line-height:1.5;text-underline-offset:4px}
+.atelier-lightbox[data-showroom-actions] .atelier-lightbox-image{max-height:calc(100dvh - 340px)}
+.atelier-lightbox[data-showroom-actions] .atelier-lightbox-image[data-atelier-image-window="true"]{width:min(100%,calc((100dvh - 340px)*var(--atelier-window-ratio)));max-height:none}
+@media(max-width:760px){
+ body[data-showroom-ready="true"]{padding-bottom:92px}
+ .showroom-dock{position:fixed;z-index:40;left:12px;right:12px;bottom:calc(10px + env(safe-area-inset-bottom,0px));display:flex;align-items:center;justify-content:space-between;gap:12px;max-width:620px;margin-inline:auto;padding:10px 11px 10px 17px;border-radius:24px;background:var(--showroom-paper,var(--paper,#fff));color:var(--showroom-ink,var(--ink,#24352f));box-shadow:0 10px 36px #10231d26;font-family:var(--showroom-body,var(--body,inherit))}
+ .showroom-dock>div{min-width:0;max-width:52%}
+ .showroom-dock-label{display:block;font-size:11px;line-height:1.5}
+ .showroom-dock-name{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;font-size:13px;font-weight:600;line-height:1.35;margin-top:2px}
+ .showroom-dock-action{display:inline-flex;align-items:center;justify-content:center;gap:9px;flex:none;min-height:48px;padding:10px 15px;border-radius:18px;background:var(--showroom-accent,var(--accent,#38604e));color:#fff;text-decoration:none;font-size:13px;line-height:1.4;font-weight:600}
+ .showroom-dock-action svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+ .showroom-photo-actions{grid-template-columns:1fr;gap:8px;margin-top:14px;padding-top:14px}
+ .showroom-photo-name{font-size:16px}
+ .showroom-photo-choose{grid-column:auto;grid-row:auto;justify-self:stretch;order:3}
+ .showroom-measures{padding-inline:13px}
+ .showroom-measures>summary{font-size:14px}
+}
+@media(max-width:359px){.showroom-dock{left:8px;right:8px;gap:8px;padding-left:12px}.showroom-dock-action{padding-inline:12px;font-size:12px}.showroom-dock-name{font-size:12px}}
+@media(prefers-reduced-motion:reduce){.showroom-measures>summary svg{transition:none}}

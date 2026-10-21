@@ -6,6 +6,8 @@ Público: visitantes de Goiânia e região interessados em estofados ou cadeiras
 
 Objetivo: encontrar uma referência, ampliar sua fotografia, informar tipo de pedido e medidas e abrir o canal oficial por ação do visitante. Nunca enviar mensagem automaticamente.
 
-Verdade do produto: Bioatual fabricação própria,Av.FonteNovaQ14Lt25n503,Goiânia,WA5562994800731. Acharei corrobora503 etelefone; ignorarpromos/anos.
+Verdade do produto: A bio confirma fabricação própria, Avenida Fonte Nova, nº503, Quadra14, Lote25, Goiânia e WhatsApp 5562994800731. Acharei corrobora telefone e número; promoções e anos de experiência não foram reproduzidos.
 
 Restrições: noindex/nofollow; rodapé de proposta; não inventar preços, estoque, promoções, prazos, garantias, avaliações ou anos. Cada foto mantém publicação de origem. Foto inteira em fluxo natural, moldura de 8px e proporção real; sem cover ou zoom.
+
+Refinamento v11: prioridade para fotografia útil cedo, corpo de 16px em peso400, hierarquia de títulos e consulta por peça com serviço opcional inicialmente neutro. A confirmação comercial continua exclusivamente por ação do visitante.

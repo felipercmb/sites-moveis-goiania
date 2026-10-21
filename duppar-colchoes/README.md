@@ -11,3 +11,5 @@ Prévia local independente. Abra index.html por um servidor HTTP estático.
 - NOINDEX e rodapé de proposta independente.
 
 PRODUCT.md contém escopo e evidências; DESIGN.md contém tokens e contrato das molduras.
+
+Revisão v11: hierarquia tipográfica mais leve, foto inteira na abertura do desktop, copy específica e preparação de mensagem com preservação do texto editado. CSS e script locais versionados com?v=11.
